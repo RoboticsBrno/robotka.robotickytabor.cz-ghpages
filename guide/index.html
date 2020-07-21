@@ -1,0 +1,4765 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+
+    <title>Návod na složení</title>
+    <meta name="description" content="Robotka pro Robotický tábor" />
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/jquery.fancybox.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen,projection" href="/assets/main.css">
+    <link rel="canonical" href="https://robotka.robotickytabor.cz/guide/" />
+    <link rel="stylesheet" href="/assets/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172441283-1"></script>
+<script>
+  window['ga-disable-UA-172441283-1'] = window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNotTrack === "yes" || navigator.msDoNotTrack === "1";
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-172441283-1');
+</script>
+
+    
+</head>
+
+
+  <body>
+
+    <div class="navbar-fixed">
+<nav class="primary" role="navigation">
+
+    <div class="nav-wrapper container">
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+
+      <a id="logo-container" class="brand-logo" href="/">
+        <img src="/img/logo.png">
+        <span style="border-bottom: 2px solid #ef476f;">Robotka</span>
+      </a>
+
+    
+    
+
+          <ul class="hide-on-med-and-down" style="list-style-type: none; margin-left: 200px">
+            <li><a href="/">Úvod</a></li>
+            <li><a href="/#galerie">Galerie</a></li>
+            
+                
+                    
+                    
+                
+                    
+                    
+                    <li><a href="/guide/">Návod na složení</a></li>
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+            
+
+            
+            <li><a href="/coding/000_vyvojove_prostredi.html">Programování</a></li>
+            
+            <li><a href="/assignments/first/01_01_blikani.html">Úkoly</a></li>
+            
+            <li><a href="/inspiration/000_uvod.html">Inspirace</a></li>
+
+            
+            <li><a href="/recovery/index.html" class="orange-text" style="font-weight: bold">Nefunguje?</a></li>
+
+
+          </ul>
+
+          <ul id="nav-mobile" class="side-nav">
+            <li><a href="/">Úvod</a></li>
+            <li><a href="/#galerie">Galerie</a></li>
+
+              
+                
+                    
+                    
+                
+                    
+                    
+                    <li><a href="/guide/">Návod na složení</a></li>
+                      
+                        <ul style="margin-bottom: 96px; padding-left: 20px;">
+                          
+                              <li><a href="#"> </a></li>
+                              
+                          
+                              <li><a href="#Obecné rady"> Obecné rady</a></li>
+                              
+                                  <li><a href="#koutový-spoj" style="margin-left: 20px; font-size: 70%"> Koutový spoj</a></li>
+                              
+                          
+                              <li><a href="#RBCX"> RBCX</a></li>
+                              
+                          
+                              <li><a href="#Battery pack"> Battery pack</a></li>
+                              
+                          
+                              <li><a href="#Paluba"> Paluba</a></li>
+                              
+                          
+                              <li><a href="#Podvozek"> Podvozek</a></li>
+                              
+                          
+                              <li><a href="#Kolečka"> Kolečka</a></li>
+                              
+                          
+                              <li><a href="#Motory"> Motory</a></li>
+                              
+                          
+                              <li><a href="#Kryt"> Kryt</a></li>
+                              
+                          
+                              <li><a href="#Kompletace podvozku"> Kompletace podvozku</a></li>
+                              
+                                  <li><a href="#napájení-rbcx" style="margin-left: 20px; font-size: 70%"> Napájení RBCX</a></li>
+                              
+                                  <li><a href="#upevnění-kartáčků" style="margin-left: 20px; font-size: 70%"> Upevnění kartáčků</a></li>
+                              
+                          
+                              <li><a href="#Kompletace paluby"> Kompletace paluby</a></li>
+                              
+                                  <li><a href="#sloupky-pro-rbcx" style="margin-left: 20px; font-size: 70%"> Sloupky pro RBCX</a></li>
+                              
+                                  <li><a href="#upevnění-světlovodů" style="margin-left: 20px; font-size: 70%"> Upevnění světlovodů</a></li>
+                              
+                                  <li><a href="#vložení-hmatníku" style="margin-left: 20px; font-size: 70%"> Vložení hmatníku</a></li>
+                              
+                                  <li><a href="#upevnění-rbcx" style="margin-left: 20px; font-size: 70%"> Upevnění RBCX</a></li>
+                              
+                                  <li><a href="#kryt-na-usb-c" style="margin-left: 20px; font-size: 70%"> Kryt na USB C</a></li>
+                              
+                                  <li><a href="#připojení-napájení" style="margin-left: 20px; font-size: 70%"> Připojení napájení</a></li>
+                              
+                          
+                              <li><a href="#Kompletace celého robota"> Kompletace celého robota</a></li>
+                              
+                                  <li><a href="#sešroubování-paluby" style="margin-left: 20px; font-size: 70%"> Sešroubování paluby</a></li>
+                              
+                                  <li><a href="#zapojení-motorů" style="margin-left: 20px; font-size: 70%"> Zapojení motorů</a></li>
+                              
+                                  <li><a href="#připojení-baterky" style="margin-left: 20px; font-size: 70%"> Připojení baterky</a></li>
+                              
+                                  <li><a href="#odpojení-baterky" style="margin-left: 20px; font-size: 70%"> Odpojení baterky</a></li>
+                              
+                          
+                              <li><a href="#Držáky ultrazvukových senzorů"> Držáky ultrazvukových senzorů</a></li>
+                              
+                                  <li><a href="#montáž-na-robotčinu-palubu" style="margin-left: 20px; font-size: 70%"> Montáž na Robotčinu palubu</a></li>
+                              
+                          
+                              <li><a href="#Senzory a příslušenství"> Senzory a příslušenství</a></li>
+                              
+                                  <li><a href="#zapojení-rgb-led-pásku" style="margin-left: 20px; font-size: 70%"> Zapojení RGB LED pásku</a></li>
+                              
+                                  <li><a href="#zapojení-ultrazvuků" style="margin-left: 20px; font-size: 70%"> Zapojení ultrazvuků</a></li>
+                              
+                                  <li><a href="#zapojení-tlačítek" style="margin-left: 20px; font-size: 70%"> Zapojení tlačítek</a></li>
+                              
+                                  <li><a href="#senzor-na-čáru" style="margin-left: 20px; font-size: 70%"> Senzor na čáru</a></li>
+                              
+                          
+                        </ul>
+                      
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+            
+
+            
+            <li><a href="/coding/000_vyvojove_prostredi.html">Programování</a></li>
+            
+            <li><a href="/assignments/first/01_01_blikani.html">Úkoly</a></li>
+            
+            <li><a href="/inspiration/000_uvod.html">Inspirace</a></li>
+
+            
+            <li><a href="/recovery/index.html" class="orange-text" style="font-weight: bold">Nefunguje?</a></li>
+          </ul>
+
+
+
+          
+          <a href="javascript:void(0);" class="right" onclick="onJumpToStepClick();" title="Skočit na krok..."><i class="material-icons">forward</i></a>
+          
+
+          <form action="/search" class="search-form">
+            <input type="text" placeholder="Hledat..." name="q">
+            <button type="submit" class="btn-flat white-text"><i class="material-icons">search</i></button>
+          </form>
+
+
+
+    </div>
+</nav>
+</div>
+
+
+    <main>
+        <div class="sidenav" id="sidenav">
+    
+        <a href="#"> </a>
+        
+    
+        <a href="#obecné-rady"> Obecné rady</a>
+        
+            <a href="#koutový-spoj" style="margin-left: 18px; font-size: 80%"> Koutový spoj</a>
+        
+    
+        <a href="#rbcx"> RBCX</a>
+        
+    
+        <a href="#battery-pack"> Battery pack</a>
+        
+    
+        <a href="#paluba"> Paluba</a>
+        
+    
+        <a href="#podvozek"> Podvozek</a>
+        
+    
+        <a href="#kolečka"> Kolečka</a>
+        
+    
+        <a href="#motory"> Motory</a>
+        
+    
+        <a href="#kryt"> Kryt</a>
+        
+    
+        <a href="#kompletace-podvozku"> Kompletace podvozku</a>
+        
+            <a href="#napájení-rbcx" style="margin-left: 18px; font-size: 80%"> Napájení RBCX</a>
+        
+            <a href="#upevnění-kartáčků" style="margin-left: 18px; font-size: 80%"> Upevnění kartáčků</a>
+        
+    
+        <a href="#kompletace-paluby"> Kompletace paluby</a>
+        
+            <a href="#sloupky-pro-rbcx" style="margin-left: 18px; font-size: 80%"> Sloupky pro RBCX</a>
+        
+            <a href="#upevnění-světlovodů" style="margin-left: 18px; font-size: 80%"> Upevnění světlovodů</a>
+        
+            <a href="#vložení-hmatníku" style="margin-left: 18px; font-size: 80%"> Vložení hmatníku</a>
+        
+            <a href="#upevnění-rbcx" style="margin-left: 18px; font-size: 80%"> Upevnění RBCX</a>
+        
+            <a href="#kryt-na-usb-c" style="margin-left: 18px; font-size: 80%"> Kryt na USB C</a>
+        
+            <a href="#připojení-napájení" style="margin-left: 18px; font-size: 80%"> Připojení napájení</a>
+        
+    
+        <a href="#kompletace-celého-robota"> Kompletace celého robota</a>
+        
+            <a href="#sešroubování-paluby" style="margin-left: 18px; font-size: 80%"> Sešroubování paluby</a>
+        
+            <a href="#zapojení-motorů" style="margin-left: 18px; font-size: 80%"> Zapojení motorů</a>
+        
+            <a href="#připojení-baterky" style="margin-left: 18px; font-size: 80%"> Připojení baterky</a>
+        
+            <a href="#odpojení-baterky" style="margin-left: 18px; font-size: 80%"> Odpojení baterky</a>
+        
+    
+        <a href="#držáky-ultrazvukových-senzorů"> Držáky ultrazvukových senzorů</a>
+        
+            <a href="#montáž-na-robotčinu-palubu" style="margin-left: 18px; font-size: 80%"> Montáž na Robotčinu palubu</a>
+        
+    
+        <a href="#senzory-a-příslušenství"> Senzory a příslušenství</a>
+        
+            <a href="#zapojení-rgb-led-pásku" style="margin-left: 18px; font-size: 80%"> Zapojení RGB LED pásku</a>
+        
+            <a href="#zapojení-ultrazvuků" style="margin-left: 18px; font-size: 80%"> Zapojení ultrazvuků</a>
+        
+            <a href="#zapojení-tlačítek" style="margin-left: 18px; font-size: 80%"> Zapojení tlačítek</a>
+        
+            <a href="#senzor-na-čáru" style="margin-left: 18px; font-size: 80%"> Senzor na čáru</a>
+        
+    
+</div>
+
+<div class="bgwrap">
+    <div class="main">
+        <div class="container con-guide">
+
+            <h2 id="návod-na-složení">Návod na složení</h2>
+
+<p>Následující návod tě provede krok za krokem stavbou Robotky. Celá stavba je rozdělena do tří částí, které jsou dále rozděleny do několika dílčích kroků, jejichž pořadí je nutné dodržovat, aby se zamezilo nutnosti rozlamovat již slepené díly.</p>
+
+<div class="section">
+    <!-- ### 
+Zde si můžeš stáhnout výrobní podklady na laser pro Robotku. Zároveň zde najdeš výrobní podklady pro desku plošných spojů. 
+
+##### Zdrojové soubory
+* [Model ve Fusionu a CAM pro 3 mm tlustou překližku](https://a360.co/2RDZ6tq)
+* [CAM pro kvalitní překližku tloušťky 4 mm](https://a360.co/2KE87C4)
+* [CAM pro kvalitní překližku tloušťky 2 mm](https://a360.co/2RDJC8H)
+* [Podklady v SVG](https://github.com/RoboticsBrno/Laser-tabor-2019)
+* [Řídicí deska](https://github.com/RoboticsBrno/RB3201-RBControl)
+* [Knihovna pro řídicí desku](https://github.com/RoboticsBrno/RB3201-RBControl-library) -->
+
+</div>
+<hr />
+
+<div id="Obecné rady" class="section">
+    <h3 id="obecné-rady">Obecné rady</h3>
+
+<p>Sestavení Robotky není náročné, některé kroky však vyžadují pečlivost. Čti proto návod pozorně a obzvlášť platí: dvakrát měř a jednou řež neboli dvakrát přikládej nasucho a jednou natírej lepidlem.</p>
+
+<p>Pro sestavení Robotky budeš potřebovat:</p>
+<ul>
+  <li>ostrý modelářský nebo zalamovací nůž,</li>
+  <li>kousek smirkového papíru,</li>
+  <li>křížový šroubovák,</li>
+  <li>pájku,</li>
+  <li>lepidlo na dřevo (Herkules).</li>
+</ul>
+
+<p><strong>Pokud nebude uvedeno jinak, všechny dřevěné dílky se lepí k sobě!</strong></p>
+
+<h5 id="lepení-dílů-k-sobě">Lepení dílů k sobě</h5>
+<p>Všechny dílky obsahují zámečky, které ti umožní dílky přesně napozicovat a často vyloučí i špatné složení. Díky zámečkům si můžeš zkusit některé kroky prvně “nasucho” bez lepidla a následně po ověření toho, že do sebe zapadají, je můžeš natřít lepidlem.</p>
+
+<p>Na lepení dřeva k sobě používej lepidlo Herkules - s výhodou v malém balení s aplikátorem.</p>
+
+<div class="row">
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/glue_hercules.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb/img/guides/glue_hercules.jpg" alt="" class="responsive-img" />
+            </a>
+            
+            <figcaption>
+                <p class="step">1</p>
+                <p>Lepidlo na lepení dřeva.</p>
+
+            </figcaption>
+            
+        </figure>
+    </div>
+</div>
+
+<p>Při skládání nasucho si všimni, které plochy se sebe dotýkají - to jsou ty plochy, které musíš natřít lepidlem. A kolik dávat lepidla? Tak akorát, aby vyplnilo všechny mezery - po stlačení dílků by mělo ze spoje vytéci trochu lepidla, ne však příliš. Toto přebytečné lepidlo můžeš utřít kouskem hadru nebo papírovou utěrkou.</p>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/gluing_1.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb/img/guides/gluing_1.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">2</p>
+                <p>Nanesení lepidla na lepenou hranu.</p>
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/gluing_2.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/gluing_2.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">3</p>
+                <p>Správné množství vytlačeného lepidla.</p>
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/gluing_3.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb/img/guides/gluing_3.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">4</p>
+                <p>Málo lepidla - žádné se nevytlačilo.</p>
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/gluing_4.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/gluing_4.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">5</p>
+                <p>Příliš lepidla - většina ho byla vytlačena ven.</p>
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<h4 id="koutový-spoj">Koutový spoj</h4>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/KOUTAK-1.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb/img/guides/KOUTAK-1.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">6</p>
+                
+<div class="alert">Pouze ukázka, NELEPIT!</div>
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/KOUTAK-2.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/KOUTAK-2.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">7</p>
+                <p>Správný koutový spoj</p>
+<div class="alert">Pouze ukázka, NELEPIT!</div>
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/PODVOZEK-16.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb/img/guides/PODVOZEK-16.jpg" alt="" class="responsive-img" />
+            </a>
+            
+            <figcaption>
+                <p class="step">8</p>
+                <p>Pokud vým vyteče moc lepidla, odstraňte ho pomocí kapesníku</p>
+<div class="alert">Pouze ukázka, NELEPIT!</div>
+
+            </figcaption>
+            
+        </figure>
+    </div>
+</div>
+
+
+</div>
+<hr />
+
+<div id="RBCX" class="section">
+    <h3 id="rbcx">RBCX</h3>
+
+<p><a href="https://github.com/RoboticsBrno/RB3204-RBCX">RBCX</a> - řídicí elektronika je navržena jako univerzální deska pro řízení různých robotických platforem. Pro získání funkční elektroniky na provoz Robotky stačí osadit jen některé součástky.</p>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/PCB1.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/PCB1.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">1</p>
+                <p>Nachystejte si DPS (desku plošných spojů), kterou jste dostali.</p>
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/PCB2.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/PCB2.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">2</p>
+                <p>Zkontrolujte si, že máte všechny součástky jako na obrázku.</p>
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/PCB3.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/PCB3.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">3</p>
+                <p>Součástky zasuňte do desky podle obrázku.</p>
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/PCB4.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/PCB4.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">4</p>
+                <p>Ještě jednou si zkontrolujte, že součástky máte v desce zasunuté přesně takto. Pozor na správné otočení (polaritu) kondenzátorů, pozor na orientaci modré patice a bílých konektorů. Vše si důkladně zkontrolujte.</p>
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/PCB5.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/PCB5.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">5</p>
+                <p>Nachystejte si osazovací přípravek.</p>
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/PCB6.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/PCB6.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">6</p>
+                <p>Osazovací přípravek nasaďte na desku se součástkami. Pokud vám nejde nasadit, nejspíš máte nějakou součástku na špatném místě.</p>
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/PCB7.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/PCB7.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">7</p>
+                <p>Takto vypadá osazovací přípravek správně nasazený na desce se součástkami.</p>
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/PCB8.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/PCB8.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">8</p>
+                <p>Nakonec připájejte všechny součástky k desce.</p>
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/stepdown1.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/stepdown1.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">9</p>
+                <p>Nachystejte si spínaný zdroj a konektor v podobě zahnutých pinheadů.</p>
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/stepdown2.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/stepdown2.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">10</p>
+                <p>Nasaďte konektor přesně podle obrázku. Pokud ho nasadíte opačně, součástka se vám potom nevejde na desku.</p>
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/stepdown3.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/stepdown3.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">11</p>
+                <p>Připájejte konektor podle obrázku.</p>
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/stepdown4.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/stepdown4.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">12</p>
+                <p>Spínaný zdroj vložte do desky plošných spojů přesně podle obrázku.</p>
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/stepdown5.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/stepdown5.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">13</p>
+                <p>Připájejte spínaný zdroj k desce z druhé strany.</p>
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/stepdown6.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/stepdown6.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">14</p>
+                <p>Přečnívající konce drátků ucvakněte pomocí štípaček.</p>
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/stepdown7.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/stepdown7.jpg" alt="" class="responsive-img" />
+            </a>
+            
+            <figcaption>
+                <p class="step">15</p>
+                <p>Spínaný zdroj máme připojený k desce.</p>
+
+            </figcaption>
+            
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/piezo1.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/piezo1.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">16</p>
+                <p>Vezměte si piezo sirénku a podívejte se, kde je označené plus (+).</p>
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/piezo2.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/piezo2.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">17</p>
+                <p>Vložte piezo sirénku do DPS a dejte pozor na polaritu (na správné otočení). Sirénku připájejte.</p>
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/piezo3.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/piezo3.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">18</p>
+                <p>Máme hotovo! Zkontrolujte si, že horní strana desky vypadá přesně takto.</p>
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/piezo4.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/piezo4.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">19</p>
+                <p>Máme hotovo! Zkontrolujte si, že spodní strana desky vypadá přesně takto.</p>
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+
+</div>
+<hr />
+
+<div id="Battery pack" class="section">
+    <h3 id="battery-pack">Battery pack</h3>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/BATERKA-30.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/BATERKA-30.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">1</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/BATERKA-31.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/BATERKA-31.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">2</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/BATERKA-32.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/BATERKA-32.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">3</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/BATERKA-33.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/BATERKA-33.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">4</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/BATERKA-34.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/BATERKA-34.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">5</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/BATERKA-35.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/BATERKA-35.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">6</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/BATERKA-36.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/BATERKA-36.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">7</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/BATERKA-37.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/BATERKA-37.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">8</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/BATERKA-38.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/BATERKA-38.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">9</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/BATERKA-39.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/BATERKA-39.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">10</p>
+                <p>Délka 10 cm</p>
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/BATERKA-40.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/BATERKA-40.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">11</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/BATERKA-41.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/BATERKA-41.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">12</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/BATERKA-42.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/BATERKA-42.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">13</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/BATERKA-43.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/BATERKA-43.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">14</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/BATERKA-44.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/BATERKA-44.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">15</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/BATERKA-45.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/BATERKA-45.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">16</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/BATERKA-46.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/BATERKA-46.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">17</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/BATERKA-47.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/BATERKA-47.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">18</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+
+</div>
+<hr />
+
+<div id="Paluba" class="section">
+    <h3 id="paluba">Paluba</h3>
+
+<p>Teď si sestavíme palubu robota (horní plochu), na kterou budeme poté připevňovat senzory, nebo různé konstrukce.</p>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/PALUBA-1.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/PALUBA-1.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">1</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/PALUBA-2.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/PALUBA-2.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">2</p>
+                <p>Obruste oba dílky 26 ze strany kde je popisek</p>
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/PALUBA-3.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/PALUBA-3.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">3</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/PALUBA-4.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/PALUBA-4.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">4</p>
+                <div class="alert">Dílek R10 nelepte</div>
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/PALUBA-5.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/PALUBA-5.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">5</p>
+                <div class="alert">Přilepte díl R26. POZOR!! Palubní deska musí být otočena popiskem dolů!</div>
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/PALUBA-6.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/PALUBA-6.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">6</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/PALUBA-7.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/PALUBA-7.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">7</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/PALUBA-8.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/PALUBA-8.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">8</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/PALUBA-9.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/PALUBA-9.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">9</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/PALUBA-10.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/PALUBA-10.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">10</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/PALUBA-11.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/PALUBA-11.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">11</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/PALUBA-12.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/PALUBA-12.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">12</p>
+                <p>Díl L26 přilepte za pomoci díku L10 stejně jako na druhé straně (nelepte jej)</p>
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/PALUBA-13.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/PALUBA-13.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">13</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/PALUBA-14.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/PALUBA-14.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">14</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/PALUBA-15.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/PALUBA-15.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">15</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/PALUBA-16.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/PALUBA-16.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">16</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/PALUBA-17.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/PALUBA-17.jpg" alt="" class="responsive-img" />
+            </a>
+            
+            <figcaption>
+                <p class="step">17</p>
+                
+
+            </figcaption>
+            
+        </figure>
+    </div>
+</div>
+
+
+</div>
+<hr />
+
+<div id="Podvozek" class="section">
+    <h3 id="podvozek">Podvozek</h3>
+
+<p><strong>Připravíme si pilník nebo brusný papír, ostrý nůž (ideálně skalpel) a lepidlo Herkules.</strong></p>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/PODVOZEK-1.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/PODVOZEK-1.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">1</p>
+                <div class="alert">Ujistěte se, že dílky máte popisky nahoru!</div>
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/PODVOZEK-2.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/PODVOZEK-2.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">2</p>
+                <div class="alert">Kromě dílků 4R dílky nelepíme, pouze skládáme nasucho! Přilepíme je později.</div>
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/PODVOZEK-3.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/PODVOZEK-3.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">3</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/PODVOZEK-4.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/PODVOZEK-4.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">4</p>
+                <p>Poté co jsme si dílky vyzkoušeli složit nasucho přilepíme pouze dílky 4L a 4R</p>
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/PODVOZEK-5.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/PODVOZEK-5.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">5</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/PODVOZEK-6.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/PODVOZEK-6.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">6</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/PODVOZEK-7.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/PODVOZEK-7.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">7</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/PODVOZEK-8.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/PODVOZEK-8.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">8</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/PODVOZEK-9.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/PODVOZEK-9.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">9</p>
+                <div class="alert">Dílky stále nelepíme, slepíme je později pomocí koutového spoje</div>
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/PODVOZEK-10.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/PODVOZEK-10.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">10</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/PODVOZEK-11.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/PODVOZEK-11.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">11</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/PODVOZEK-13.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/PODVOZEK-13.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">12</p>
+                <div class="alert">Všechny části nasucho sestaveného dílu slepíme navzájem pomocí koutového spoje!</div>
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/PODVOZEK-14.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/PODVOZEK-14.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">13</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/PODVOZEK-16.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/PODVOZEK-16.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">14</p>
+                <p>Přebytečné lepidlo utřeme ubrouskem</p>
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<!-- 
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/PODVOZEK-15.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/PODVOZEK-15.jpg" alt=""
+                    class="responsive-img">
+            </a>
+            <figcaption>
+                <p class="step">15</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/PODVOZEK-16.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/PODVOZEK-16.jpg" alt="" 
+                    class="responsive-img">
+            </a>
+            <figcaption>
+                <p class="step">16</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+ -->
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/PODVOZEK-17.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/PODVOZEK-17.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">17</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/PODVOZEK-18.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/PODVOZEK-18.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">18</p>
+                <p>Stejným způsobem uděláme i druhou stranu (stále nic nelepíme)</p>
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/PODVOZEK-19.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/PODVOZEK-19.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">19</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/PODVOZEK-20.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/PODVOZEK-20.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">20</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/PODVOZEK-21.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/PODVOZEK-21.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">21</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/PODVOZEK-22.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/PODVOZEK-22.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">22</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/PODVOZEK-23.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/PODVOZEK-23.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">23</p>
+                <p>Přilepte oba dílky k palubě</p>
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/PODVOZEK-24.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/PODVOZEK-24.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">24</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/PODVOZEK-25.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/PODVOZEK-25.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">25</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/PODVOZEK-26.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/PODVOZEK-26.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">26</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/PODVOZEK-27.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/PODVOZEK-27.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">27</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/PODVOZEK-28.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/PODVOZEK-28.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">28</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/PODVOZEK-29.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/PODVOZEK-29.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">29</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/PODVOZEK-30.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/PODVOZEK-30.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">30</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/PODVOZEK-31.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/PODVOZEK-31.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">31</p>
+                <p>Do dílku 21 vložte šroub M5x 14 a přišroubujte k němu matici M5</p>
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/PODVOZEK-32.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/PODVOZEK-32.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">32</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/PODVOZEK-33.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/PODVOZEK-33.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">33</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/PODVOZEK-34.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/PODVOZEK-34.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">34</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/PODVOZEK-35.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/PODVOZEK-35.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">35</p>
+                <div class="alert">Kvůli tlusté matičce je nutné zahloubit dílek 24 pomocí záhlubníku<br />Vedoucí ti s tím pomůže</div>
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/PODVOZEK-36.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/PODVOZEK-36.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">36</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/PODVOZEK-37.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/PODVOZEK-37.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">37</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/PODVOZEK-42.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/PODVOZEK-42.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">38</p>
+                <p>Dílky zbrousíme, aby nám šla paluba lépe nasadit</p>
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/PODVOZEK-38.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/PODVOZEK-38.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">39</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/PODVOZEK-39.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/PODVOZEK-39.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">40</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/PODVOZEK-40.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/PODVOZEK-40.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">41</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/PODVOZEK-41.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/PODVOZEK-41.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">42</p>
+                <p>Na podvozek přiklopíme palubu a pomocí dílků 14 srovnáme boční sloupky a necháme zaschnout</p>
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/PODVOZEK-43.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/PODVOZEK-43.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">43</p>
+                <p>Dílky lepíme ke spodní překližce</p>
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/PODVOZEK-44.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/PODVOZEK-44.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">44</p>
+                <p>Na palubu nasadíme gumičku případně provázek a všechny spoje zalepíme koutovým spojem</p>
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/PODVOZEK-48.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/PODVOZEK-48.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">45</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/PODVOZEK-45.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/PODVOZEK-45.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">46</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/PODVOZEK-46.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/PODVOZEK-46.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">47</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/PODVOZEK-47.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/PODVOZEK-47.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">48</p>
+                <p>Dílek přilepte i na druhou stranu robota</p>
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/PODVOZEK-49-edit.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/PODVOZEK-49-edit.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">49</p>
+                <div class="alert">Pracujte pod dohledem vedoucího</div>
+<p>Pod naklepávací matky kápněte vteřiňák a nasaďte je</p>
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/PODVOZEK-51.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/PODVOZEK-51.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">50</p>
+                <p>Všechny matky je potřeba zalisovat ve svěráku</p>
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/PODVOZEK-52.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/PODVOZEK-52.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">51</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/PODVOZEK-53.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/PODVOZEK-53.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">52</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/PODVOZEK-54.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/PODVOZEK-54.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">53</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/PODVOZEK-50.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/PODVOZEK-50.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">54</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+
+</div>
+<hr />
+
+<div id="Kolečka" class="section">
+    <h3 id="kolečka">Kolečka</h3>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/KOLA-2.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/KOLA-2.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">1</p>
+                <div class="alert">Nic nelepte, dokud nebudete vyzváni!</div>
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/KOLA-4.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/KOLA-4.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">2</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/KOLA-5.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/KOLA-5.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">3</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/KOLA-6.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/KOLA-6.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">4</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/KOLA-7.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/KOLA-7.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">5</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/KOLA-8.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/KOLA-8.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">6</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/KOLA-9.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/KOLA-9.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">7</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/KOLA-10.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/KOLA-10.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">8</p>
+                <p>Zatlačte na kolečko pro správné srovnání v přípravku</p>
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/KOLA-11.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/KOLA-11.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">9</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/KOLA-12.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/KOLA-12.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">10</p>
+                <p>Do každé dírky kápněte řídký vteřiňák</p>
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/KOLA-13.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/KOLA-13.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">11</p>
+                <p>Poté kápněte vteřiňák do středového náboje</p>
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/KOLA-14.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/KOLA-14.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">12</p>
+                <p>Vytvrďte aktivátorem</p>
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/KOLA-15.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/KOLA-15.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">13</p>
+                <div class="alert">Nákolky zatím nelepte, zalepíme je později</div>
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/KOLA-16.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/KOLA-16.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">14</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/KOLA-17.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/KOLA-17.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">15</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/KOLA-18.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/KOLA-18.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">16</p>
+                <p>Slepte vteřiňákem (viz další bod)</p>
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/KOLA-19-edit.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/KOLA-19-edit.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">17</p>
+                <p>Naneste vteřinové lepidlo na místa, kam ukazují šipky</p>
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/KOLA-21.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/KOLA-21.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">18</p>
+                <p>Vytvrďte aktivátorem</p>
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/KOLA-22.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/KOLA-22.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">19</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/KOLA-23.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/KOLA-23.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">20</p>
+                <p>Proces opakujte znovu a vyrobte druhé kolečko</p>
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+
+</div>
+<hr />
+
+<div id="Motory" class="section">
+    <h3 id="motory">Motory</h3>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/MOTORY-1-edit.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/MOTORY-1-edit.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">1</p>
+                <p>Pokud z desky vystupují malé výčnělky jako na obrázku, odstraňte je pomocí kleští</p>
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/MOTORY-2.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/MOTORY-2.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">2</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/MOTORY-3.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/MOTORY-3.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">3</p>
+                <p>Půjčte si přípravek na pájení</p>
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/MOTORY-4.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/MOTORY-4.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">4</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/MOTORY-5.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/MOTORY-5.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">5</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/MOTORY-6.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/MOTORY-6.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">6</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/MOTORY-7.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/MOTORY-7.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">7</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/MOTORY-8.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/MOTORY-8.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">8</p>
+                <p>Pomocí štípacích kleští odstraňte přečnívající nožičky</p>
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/MOTORY-9-edit.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/MOTORY-9-edit.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">9</p>
+                <p>Opatrně ohněte kontakty motoru</p>
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/MOTORY-10-edit.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/MOTORY-10-edit.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">10</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/MOTORY-11-edit.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/MOTORY-11-edit.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">11</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/MOTORY-12.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/MOTORY-12.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">12</p>
+                <p>Použijte šroubky M3x25 a matky M3</p>
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/MOTORY-13.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/MOTORY-13.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">13</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/MOTORY-14.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/MOTORY-14.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">14</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/MOTORY-15.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/MOTORY-15.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">15</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/MOTORY-16.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/MOTORY-16.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">16</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/MOTORY-17.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/MOTORY-17.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">17</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/MOTORY-18.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/MOTORY-18.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">18</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/MOTORY-19.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/MOTORY-19.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">19</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/MOTORY-20.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/MOTORY-20.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">20</p>
+                <p>Vyšroubujte šroubek</p>
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/MOTORY-21.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/MOTORY-21.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">21</p>
+                <div class="alert">Motory v žádném případě nelepit k robotovi - je tam pouze zasunutý</div>
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/MOTORY-22.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/MOTORY-22.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">22</p>
+                <p>Zašroubujte šroubek</p>
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/MOTORY-23.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/MOTORY-23.jpg" alt="" class="responsive-img" />
+            </a>
+            
+            <figcaption>
+                <p class="step">23</p>
+                <p>Vložte stejným způsobem i druhý motor</p>
+
+            </figcaption>
+            
+        </figure>
+    </div>
+</div>
+
+
+</div>
+<hr />
+
+<div id="Kryt" class="section">
+    <h3 id="kryt">Kryt</h3>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/KRYT-1.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/KRYT-1.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">1</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/KRYT-2.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/KRYT-2.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">2</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/KRYT-3.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/KRYT-3.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">3</p>
+                <p>Štípačkami odstříháme boční výstupky dílků č. 14</p>
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/KRYT-4.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/KRYT-4.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">4</p>
+                <p>Vznikne vám 8 zobáčků</p>
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/KRYT-5.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/KRYT-5.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">5</p>
+                <p>Přilepte zobáček pouze k palubě</p>
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/KRYT-6.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/KRYT-6.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">6</p>
+                <p>Přilepte zobáček opět pouze k palubě</p>
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/KRYT-7.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/KRYT-7.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">7</p>
+                <p>Tento zobáček přilepte ke krytu</p>
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/KRYT-8.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/KRYT-8.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">8</p>
+                <p>Tento zobáček přilepte také ke krytu</p>
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/KRYT-9.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/KRYT-9.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">9</p>
+                <p>Na opačné straně přilepte zobáčky k palubě</p>
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/KRYT-10.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/KRYT-10.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">10</p>
+                <p>Tento také přilepte k palubě</p>
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/KRYT-11.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/KRYT-11.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">11</p>
+                <p>Magnet přichytněte na šroub M4</p>
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/KRYT-12.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/KRYT-12.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">12</p>
+                <p>Opatrně naneste kapku vteřiňáku</p>
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/KRYT-13.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/KRYT-13.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">13</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/KRYT-16.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/KRYT-16.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">14</p>
+                <p>Mezi magnety vložte plíšek pro vytvoření mezery, zatím nic nelepíme</p>
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/KRYT-14.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/KRYT-14.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">15</p>
+                <p>Naneste lepidlo na volný magnet</p>
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/KRYT-15.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/KRYT-15.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">16</p>
+                <p>Zaklopte krytem</p>
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/KRYT-17.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/KRYT-17.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">17</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/KRYT-18.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/KRYT-18.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">18</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/KRYT-19.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/KRYT-19.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">19</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/KRYT-20.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/KRYT-20.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">20</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/KRYT-21.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/KRYT-21.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">21</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/KRYT-22.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/KRYT-22.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">22</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/KRYT-23.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/KRYT-23.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">23</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/KRYT-24.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/KRYT-24.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">24</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/KRYT-25.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/KRYT-25.jpg" alt="" class="responsive-img" />
+            </a>
+            
+            <figcaption>
+                <p class="step">25</p>
+                
+
+            </figcaption>
+            
+        </figure>
+    </div>
+</div>
+
+
+</div>
+<hr />
+
+<div id="Kompletace podvozku" class="section">
+    <h3 id="kompletace-podvozku">Kompletace podvozku</h3>
+
+<h4 id="napájení-rbcx">Napájení RBCX</h4>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/ELEKTRO-1.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/ELEKTRO-1.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">1</p>
+                <p>Délka kabelu je cca 30cm</p>
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/ELEKTRO-2.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/ELEKTRO-2.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">2</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/ELEKTRO-3.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/ELEKTRO-3.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">3</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/ELEKTRO-4.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/ELEKTRO-4.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">4</p>
+                <p>Hnědý drát na MINUS, červený na MID a oranžový na PLUS</p>
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/ELEKTRO-5.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/ELEKTRO-5.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">5</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/ELEKTRO-6-edit.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/ELEKTRO-6-edit.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">6</p>
+                <p>Zasuňte konektor ve směru šipky</p>
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/ELEKTRO-7.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/ELEKTRO-7.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">7</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/ELEKTRO-8.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/ELEKTRO-8.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">8</p>
+                <p>Do dírek vložte šroubky pro přesné zapozicování děr a poté destičku zalepte vteřiňákem a vytáhněte šroubky</p>
+<div class="alert">Pracujte pod dohledem vedoucího</div>
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<hr />
+
+<h4 id="upevnění-kartáčků">Upevnění kartáčků</h4>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/KARTACEK-1-edit.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/KARTACEK-1-edit.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">9</p>
+                <p>Kartáčky zasuňte na místo šipek</p>
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/KARTACEK-2.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/KARTACEK-2.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">10</p>
+                <div class="alert">Pracujte pod dohledem vedoucího</div>
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+
+</div>
+<hr />
+
+<div id="Kompletace paluby" class="section">
+    <h3 id="kompletace-paluby">Kompletace paluby</h3>
+
+<!-- #### Zpevnění paluby
+
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/VYZTUHA-1.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/VYZTUHA-1.jpg" alt=""
+                    class="responsive-img">
+            </a>
+            <figcaption>
+                <p class="step">1</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/VYZTUHA-2.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/VYZTUHA-2.jpg" alt="" 
+                    class="responsive-img">
+            </a>
+            <figcaption>
+                <p class="step">2</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+
+
+
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/VYZTUHA-3.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/VYZTUHA-3.jpg" alt=""
+                    class="responsive-img">
+            </a>
+            <figcaption>
+                <p class="step">3</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/VYZTUHA-4.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/VYZTUHA-4.jpg" alt="" 
+                    class="responsive-img">
+            </a>
+            <figcaption>
+                <p class="step">4</p>
+                <div class="alert">Dílek pouze vložte, nelepte!</div>
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+
+
+
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/VYZTUHA-5.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/VYZTUHA-5.jpg" alt=""
+                    class="responsive-img">
+            </a>
+            <figcaption>
+                <p class="step">5</p>
+                <p>Nalepte pouze dílek 30</p>
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/VYZTUHA-6.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/VYZTUHA-6.jpg" alt="" 
+                    class="responsive-img">
+            </a>
+            <figcaption>
+                <p class="step">6</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+
+
+
+
+
+<div class="row">
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/VYZTUHA-7.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/VYZTUHA-7.jpg" alt=""
+                    class="responsive-img">
+            </a>
+            
+            <figcaption>
+                <p class="step">7</p>
+                
+
+            </figcaption>
+            
+        </figure>
+    </div>
+</div>
+
+ -->
+
+<h4 id="sloupky-pro-rbcx">Sloupky pro RBCX</h4>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/SLOUP-1.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/SLOUP-1.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">8</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/SLOUP--2.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/SLOUP--2.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">9</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/SLOUP-3.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/SLOUP-3.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">10</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/SLOUP-4.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/SLOUP-4.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">11</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/SLOUP-5.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/SLOUP-5.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">12</p>
+                <p>Zařízněte a zabrušte brusnou destičkou</p>
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/SLOUP-6.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/SLOUP-6.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">13</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<h4 id="upevnění-světlovodů">Upevnění světlovodů</h4>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/SVETLOVOD-1.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/SVETLOVOD-1.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">14</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/SVETLOVOD-2.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/SVETLOVOD-2.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">15</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/SVETLOVOD-3.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/SVETLOVOD-3.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">16</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/SVETLOVOD-4.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/SVETLOVOD-4.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">17</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/SVETLOVOD-5.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/SVETLOVOD-5.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">18</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/SVETLOVOD-6.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/SVETLOVOD-6.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">19</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/SVETLOVOD-7.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/SVETLOVOD-7.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">20</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/SVETLOVOD-8.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/SVETLOVOD-8.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">21</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/SVETLOVOD-9.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/SVETLOVOD-9.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">22</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/SVETLOVOD-10.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/SVETLOVOD-10.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">23</p>
+                <p>Takhle krásně to svítí :-)</p>
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<hr />
+
+<h4 id="vložení-hmatníku">Vložení hmatníku</h4>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/HMATNIK-1.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/HMATNIK-1.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">24</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/HMATNIK-2.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/HMATNIK-2.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">25</p>
+                <div class="alert">Dílek pouze vložte, nelepte!</div>
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<hr />
+
+<h4 id="upevnění-rbcx">Upevnění RBCX</h4>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/UPEVNENI_RBCX-1.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/UPEVNENI_RBCX-1.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">26</p>
+                <p>Pomocí šroubů M3x5 přišroubujte RBCX</p>
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/UPEVNENI_RBCX-2.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/UPEVNENI_RBCX-2.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">27</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/UPEVNENI_RBCX-3.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/UPEVNENI_RBCX-3.jpg" alt="" class="responsive-img" />
+            </a>
+            
+            <figcaption>
+                <p class="step">28</p>
+                
+
+            </figcaption>
+            
+        </figure>
+    </div>
+</div>
+
+<hr />
+
+<h4 id="kryt-na-usb-c">Kryt na USB C</h4>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/KRYT_USB-1.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/KRYT_USB-1.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">29</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/KRYT_USB-2.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/KRYT_USB-2.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">30</p>
+                <p>Na plastový dílek kápněte vteřiňákem a přileppte jej</p>
+<div class="alert">Pozor aby vteřiňák nezatekl do konektoru</div>
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/KRYT_USB-3.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/KRYT_USB-3.jpg" alt="" class="responsive-img" />
+            </a>
+            
+            <figcaption>
+                <p class="step">31</p>
+                
+
+            </figcaption>
+            
+        </figure>
+    </div>
+</div>
+
+<h4 id="připojení-napájení">Připojení napájení</h4>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/DRAT-1.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/DRAT-1.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">32</p>
+                <p>Protáhněte kabel pod deskou</p>
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/DRAT-2.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/DRAT-2.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">33</p>
+                <p>Přišroubujte dráty do svorkovnice<br />
+         Hnědý drát na B-, červený na Bmid a oranžový na B+</p>
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+
+</div>
+<hr />
+
+<div id="Kompletace celého robota" class="section">
+    <h3 id="kompletace-celého-robota">Kompletace celého robota</h3>
+
+<h4 id="sešroubování-paluby">Sešroubování paluby</h4>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/SROUBY-1.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/SROUBY-1.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">1</p>
+                <p>Pomocí šroubů M4x45 přišroubujte palubu</p>
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/SROUBY-2.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/SROUBY-2.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">2</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/SROUBY-3.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/SROUBY-3.jpg" alt="" class="responsive-img" />
+            </a>
+            
+            <figcaption>
+                <p class="step">3</p>
+                
+
+            </figcaption>
+            
+        </figure>
+    </div>
+</div>
+
+<hr />
+
+<h4 id="zapojení-motorů">Zapojení motorů</h4>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/MOTORY_DRATY-1.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/MOTORY_DRATY-1.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">4</p>
+                <p>Připojte motory do konektorů M1 a M4</p>
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/MOTORY_DRATY-2.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/MOTORY_DRATY-2.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">5</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<h4 id="připojení-baterky">Připojení baterky</h4>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/BATERKA-1.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/BATERKA-1.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">6</p>
+                <p>Připojení baterky</p>
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/BATERKA-2.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/BATERKA-2.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">7</p>
+                <div class="alert">Baterku v žádném případě nelepte k robotovi</div>
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/BATERKA-3.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/BATERKA-3.jpg" alt="" class="responsive-img" />
+            </a>
+            
+            <figcaption>
+                <p class="step">8</p>
+                
+
+            </figcaption>
+            
+        </figure>
+    </div>
+</div>
+
+<h4 id="odpojení-baterky">Odpojení baterky</h4>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/BATERKA-4.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/BATERKA-4.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">9</p>
+                <p>Odpjení baterky</p>
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/BATERKA-1.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/BATERKA-1.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">10</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+
+</div>
+<hr />
+
+<div id="Držáky ultrazvukových senzorů" class="section">
+    <h3 id="držáky-ultrazvukových-senzorů">Držáky ultrazvukových senzorů</h3>
+
+<p><strong>Aneb ultradržáky ultrasonických ultrasenzorů.</strong>
+<strong>Díky nim budeme moci zjišťovat ultrapozici naší ultrarobotky v ultraprostoru. :-)</strong></p>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/ULTRAZVUK-1.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/ULTRAZVUK-1.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">1</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/ULTRAZVUK-2.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/ULTRAZVUK-2.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">2</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/ULTRAZVUK-3.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/ULTRAZVUK-3.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">3</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/ULTRAZVUK-4.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/ULTRAZVUK-4.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">4</p>
+                <div class="alert">Před nalepením ultrazvuku do držáku připojte kabel!</div>
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/ULTRAZVUK-5.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/ULTRAZVUK-5.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">5</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/ULTRAZVUK-6.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/ULTRAZVUK-6.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">6</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/ULTRAZVUK-7.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/ULTRAZVUK-7.jpg" alt="" class="responsive-img" />
+            </a>
+            
+            <figcaption>
+                <p class="step">7</p>
+                
+
+            </figcaption>
+            
+        </figure>
+    </div>
+</div>
+
+<hr />
+
+<h4 id="montáž-na-robotčinu-palubu">Montáž na Robotčinu palubu</h4>
+
+<p><strong>Nyní připevníme ultrazvukové senzory na Robotku. Budeme na to potřebovat tavnou pistoli.</strong></p>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/ULTRAZVUK-8.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/ULTRAZVUK-8.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">8</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/ULTRAZVUK-10.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/ULTRAZVUK-10.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">9</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/ULTRAZVUK-11.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/ULTRAZVUK-11.jpg" alt="" class="responsive-img" />
+            </a>
+            
+            <figcaption>
+                <p class="step">10</p>
+                
+
+            </figcaption>
+            
+        </figure>
+    </div>
+</div>
+
+
+</div>
+<hr />
+
+<div id="Senzory a příslušenství" class="section">
+    <h3 id="senzory-a-příslušenství">Senzory a příslušenství</h3>
+
+<h4 id="zapojení-rgb-led-pásku">Zapojení RGB LED pásku</h4>
+
+<ul>
+  <li>1x RGB LED pásek</li>
+  <li>1x třípinový pinhead</li>
+  <li>1x třípinový kabel</li>
+</ul>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/LED.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/LED.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">1</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/SENZORY-1.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/SENZORY-1.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">2</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/SENZORY-2.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/SENZORY-2.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">3</p>
+                <p>Prostřední pin musí být připájen na kontakt 4-7VDC, krejní piny na DIN a GND</p>
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/SENZORY-3.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/SENZORY-3.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">4</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/SENZORY-4.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/SENZORY-4.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">5</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/SENZORY-5.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/SENZORY-5.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">6</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/SENZORY-6.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/SENZORY-6.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">7</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/SENZORY-7.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/SENZORY-7.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">8</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/SENZORY-8.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/SENZORY-8.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">9</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/SENZORY-9-edit.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/SENZORY-9-edit.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">10</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<hr />
+
+<h4 id="zapojení-ultrazvuků">Zapojení ultrazvuků</h4>
+
+<ul>
+  <li>2x ultrazvuk</li>
+  <li>2x čtyřpinový kabel</li>
+</ul>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/ULTRAZVUK.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/ULTRAZVUK.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">11</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/SENZORY-10.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/SENZORY-10.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">12</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/SENZORY-11.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/SENZORY-11.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">13</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/SENZORY-12-edit.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/SENZORY-12-edit.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">14</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/SENZORY-13.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/SENZORY-13.jpg" alt="" class="responsive-img" />
+            </a>
+            
+            <figcaption>
+                <p class="step">15</p>
+                
+
+            </figcaption>
+            
+        </figure>
+    </div>
+</div>
+
+<hr />
+
+<h4 id="zapojení-tlačítek">Zapojení tlačítek</h4>
+
+<ul>
+  <li>2x tlačítková deska</li>
+</ul>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/TLACITKO.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/TLACITKO.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">16</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/SENZORY-14.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/SENZORY-14.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">17</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/SENZORY-15-edit.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/SENZORY-15-edit.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">18</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/SENZORY-16.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/SENZORY-16.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">19</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/SENZORY-17.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/SENZORY-17.jpg" alt="" class="responsive-img" />
+            </a>
+            
+            <figcaption>
+                <p class="step">20</p>
+                
+
+            </figcaption>
+            
+        </figure>
+    </div>
+</div>
+
+<hr />
+
+<h4 id="senzor-na-čáru">Senzor na čáru</h4>
+
+<ul>
+  <li>2x senzor na čáru</li>
+  <li>2x třípinový kabel</li>
+</ul>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/CARA.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/CARA.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">21</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/SENZORY-21.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/SENZORY-21.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">22</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/SENZORY-22.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/SENZORY-22.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">23</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/SENZORY-23.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/SENZORY-23.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">24</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/SENZORY-24.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/SENZORY-24.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">25</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/SENZORY-25-edit.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/SENZORY-25-edit.jpg" alt="" class="responsive-img" />
+            </a>
+            <figcaption>
+                <p class="step">26</p>
+                
+
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col l6 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/SENZORY-26.jpg">
+                <img src="/img/empty.gif" data-echo="/thumb//img/guides/SENZORY-26.jpg" alt="" class="responsive-img" />
+            </a>
+            
+            <figcaption>
+                <p class="step">27</p>
+                
+
+            </figcaption>
+            
+        </figure>
+    </div>
+</div>
+
+
+</div>
+<hr />
+
+
+
+        </div>
+    </div>
+</div>
+
+
+    </main>
+
+    
+
+    <!--  Scripts-->
+<script src="/js/jquery.min.js"></script>
+<script src="/js/materialize.min.js"></script>
+<script src="/js/jquery.fancybox.min.js"></script>
+<script>window.noZensmooth = true</script>
+<script src="/js/zenscroll-min.js"></script>
+<script src="/js/init.js"></script>
+
+
+    <script>
+(function (root, factory) {
+    if (typeof define === 'function' && define.amd) {
+      define(function() {
+        return factory(root);
+      });
+    } else if (typeof exports === 'object') {
+      module.exports = factory;
+    } else {
+      root.echo = factory(root);
+    }
+  })(this, function (root) {
+  
+    'use strict';
+  
+    var echo = {};
+  
+    var callback = function () {};
+  
+    var offset, poll, delay, useDebounce, unload;
+  
+    var isHidden = function (element) {
+      return (element.offsetParent === null);
+    };
+    
+    var inView = function (element, view) {
+      if (isHidden(element)) {
+        return false;
+      }
+  
+      var box = element.getBoundingClientRect();
+      return (box.right >= view.l && box.bottom >= view.t && box.left <= view.r && box.top <= view.b);
+    };
+  
+    var debounceOrThrottle = function () {
+      if(!useDebounce && !!poll) {
+        return;
+      }
+      clearTimeout(poll);
+      poll = setTimeout(function(){
+        echo.render();
+        poll = null;
+      }, delay);
+    };
+  
+    echo.init = function (opts) {
+      opts = opts || {};
+      var offsetAll = opts.offset || 0;
+      var offsetVertical = opts.offsetVertical || offsetAll;
+      var offsetHorizontal = opts.offsetHorizontal || offsetAll;
+      var optionToInt = function (opt, fallback) {
+        return parseInt(opt || fallback, 10);
+      };
+      offset = {
+        t: optionToInt(opts.offsetTop, offsetVertical),
+        b: optionToInt(opts.offsetBottom, offsetVertical),
+        l: optionToInt(opts.offsetLeft, offsetHorizontal),
+        r: optionToInt(opts.offsetRight, offsetHorizontal)
+      };
+      delay = optionToInt(opts.throttle, 250);
+      useDebounce = opts.debounce !== false;
+      unload = !!opts.unload;
+      callback = opts.callback || callback;
+      echo.render();
+      if (document.addEventListener) {
+        root.addEventListener('scroll', debounceOrThrottle, false);
+        root.addEventListener('load', debounceOrThrottle, false);
+      } else {
+        root.attachEvent('onscroll', debounceOrThrottle);
+        root.attachEvent('onload', debounceOrThrottle);
+      }
+    };
+  
+    echo.render = function (context) {
+      var nodes = (context || document).querySelectorAll('[data-echo], [data-echo-background]');
+      var length = nodes.length;
+      var src, elem;
+      var view = {
+        l: 0 - offset.l,
+        t: 0 - offset.t,
+        b: (root.innerHeight || document.documentElement.clientHeight) + offset.b,
+        r: (root.innerWidth || document.documentElement.clientWidth) + offset.r
+      };
+      for (var i = 0; i < length; i++) {
+        elem = nodes[i];
+        if (inView(elem, view)) {
+  
+          if (unload) {
+            elem.setAttribute('data-echo-placeholder', elem.src);
+          }
+  
+          if (elem.getAttribute('data-echo-background') !== null) {
+            elem.style.backgroundImage = 'url(' + elem.getAttribute('data-echo-background') + ')';
+          }
+          else if (elem.src !== (src = elem.getAttribute('data-echo'))) {
+            elem.src = src;
+          }
+  
+          if (!unload) {
+            elem.removeAttribute('data-echo');
+            elem.removeAttribute('data-echo-background');
+          }
+  
+          callback(elem, 'load');
+        }
+        else if (unload && !!(src = elem.getAttribute('data-echo-placeholder'))) {
+  
+          if (elem.getAttribute('data-echo-background') !== null) {
+            elem.style.backgroundImage = 'url(' + src + ')';
+          }
+          else {
+            elem.src = src;
+          }
+  
+          elem.removeAttribute('data-echo-placeholder');
+          callback(elem, 'unload');
+        }
+      }
+      if (!length) {
+        echo.detach();
+      }
+    };
+  
+    echo.detach = function () {
+      if (document.removeEventListener) {
+        root.removeEventListener('scroll', debounceOrThrottle);
+      } else {
+        root.detachEvent('onscroll', debounceOrThrottle);
+      }
+      clearTimeout(poll);
+    };
+  
+    return echo;
+  
+  });
+</script>
+<script>
+    echo.init({
+      offset: 2500,
+      throttle: 250,
+      unload: false,
+      callback: function (element, op) {
+        //console.log(element, 'has been', op + 'ed')
+      }
+    });
+</script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172441283-1"></script>
+<script>
+  window['ga-disable-UA-172441283-1'] = window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNotTrack === "yes" || navigator.msDoNotTrack === "1";
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-172441283-1');
+</script>
+
+  </body>
+
+</html>

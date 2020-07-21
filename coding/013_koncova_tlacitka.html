@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+
+    <title>Koncová tlačítka</title>
+    <meta name="description" content="Koncová tlačítka" />
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/jquery.fancybox.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen,projection" href="/assets/main.css">
+    <link rel="canonical" href="https://robotka.robotickytabor.cz/coding/013_koncova_tlacitka.html" />
+    <link rel="stylesheet" href="/assets/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172441283-1"></script>
+<script>
+  window['ga-disable-UA-172441283-1'] = window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNotTrack === "yes" || navigator.msDoNotTrack === "1";
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-172441283-1');
+</script>
+
+    
+</head>
+
+
+  <body>
+
+    <div class="navbar-fixed">
+<nav class="primary" role="navigation">
+
+    <div class="nav-wrapper container">
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+
+      <a id="logo-container" class="brand-logo" href="/">
+        <img src="/img/logo.png">
+        <span style="border-bottom: 2px solid #ef476f;">Robotka</span>
+      </a>
+
+    
+    
+
+          <ul class="hide-on-med-and-down" style="list-style-type: none; margin-left: 200px">
+            <li><a href="/">Úvod</a></li>
+            <li><a href="/#galerie">Galerie</a></li>
+            
+                
+                    
+                    
+                
+                    
+                    
+                    <li><a href="/guide/">Návod na složení</a></li>
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+            
+
+            
+            <li><a href="/coding/000_vyvojove_prostredi.html">Programování</a></li>
+            
+            <li><a href="/assignments/first/01_01_blikani.html">Úkoly</a></li>
+            
+            <li><a href="/inspiration/000_uvod.html">Inspirace</a></li>
+
+            
+            <li><a href="/recovery/index.html" class="orange-text" style="font-weight: bold">Nefunguje?</a></li>
+
+
+          </ul>
+
+          <ul id="nav-mobile" class="side-nav">
+            <li><a href="/">Úvod</a></li>
+            <li><a href="/#galerie">Galerie</a></li>
+
+              
+                
+                    
+                    
+                
+                    
+                    
+                    <li><a href="/guide/">Návod na složení</a></li>
+                      
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+            
+
+            
+            <li><a href="/coding/000_vyvojove_prostredi.html">Programování</a></li>
+            
+            <li><a href="/assignments/first/01_01_blikani.html">Úkoly</a></li>
+            
+            <li><a href="/inspiration/000_uvod.html">Inspirace</a></li>
+
+            
+            <li><a href="/recovery/index.html" class="orange-text" style="font-weight: bold">Nefunguje?</a></li>
+          </ul>
+
+
+
+          
+
+          <form action="/search" class="search-form">
+            <input type="text" placeholder="Hledat..." name="q">
+            <button type="submit" class="btn-flat white-text"><i class="material-icons">search</i></button>
+          </form>
+
+
+
+    </div>
+</nav>
+</div>
+
+
+    <main>
+        
+<div class="sidenav">
+    
+        <a href="/coding/000_vyvojove_prostredi.html">1. Vývojové prostředí</a>
+        
+    
+        <a href="/coding/001_dalkove_ovladani.html">2. Dálkové ovládání</a>
+        
+    
+        <a href="/coding/002_zalozeni_projektu.html">3. Nový projekt</a>
+        
+    
+        <a href="/coding/003_prvni_program.html">4. První program</a>
+        
+    
+        <a href="/coding/004_formatovani_kodu.html">5. Formátování kódu</a>
+        
+    
+        <a href="/coding/005_komentare.html">6. Komentáře</a>
+        
+    
+        <a href="/coding/006_promenna.html">7. Proměnná</a>
+        
+    
+        <a href="/coding/007_vetveni.html">8. Větvení</a>
+        
+    
+        <a href="/coding/008_cyklus.html">9. Cyklus</a>
+        
+    
+        <a href="/coding/009_funkce.html">10. Funkce</a>
+        
+    
+        <a href="/coding/010_LEDky.html">11. LEDky</a>
+        
+    
+        <a href="/coding/011_LED_pasek.html">12. LED pásek</a>
+        
+    
+        <a href="/coding/012_seriova_linka.html">13. Sériová linka</a>
+        
+    
+        <a href="/coding/013_koncova_tlacitka.html">14. Koncová tlačítka</a>
+        
+            
+                <a href="#detekce-stisknutí-tlačítka" style="margin-left: 18px; font-size: 80%"> Detekce stisknutí tlačítka</a>
+            
+                <a href="#jak-program-funguje" style="margin-left: 18px; font-size: 80%"> Jak program funguje</a>
+            
+        
+    
+        <a href="/coding/014_prace_s_tlacitky.html">15. Práce s tlačítky</a>
+        
+    
+        <a href="/coding/015_ultrazvuk.html">16. Ultrazvuk</a>
+        
+    
+        <a href="/coding/016_IR_senzor.html">17. IR senzor</a>
+        
+    
+        <a href="/coding/017_motory.html">18. Motory</a>
+        
+    
+        <a href="/coding/018_monitorovani.html">19. Monitorování robotky</a>
+        
+    
+        <a href="/coding/019_servos.html">20. Serva (hloupá)</a>
+        
+    
+        <a href="/coding/999_upravy_dalkoveho_ovladani.html">21. Úpravy dálkového ovládání</a>
+        
+    
+
+
+    <a style="margin: 32px 12px 0px 12px; padding: 0 2rem;" class="btn-small" href="https://roboticsbrno.github.io/RB3204-RBCX-Robotka-library/modules.html">Dokumentace</a>
+    <a style="margin: 8px 12px 24px 12px; padding: 0 2rem;" class="btn-small green darken-1" href="https://github.com/RoboticsBrno/robotka-examples/archive/master.zip">Příklady</a>
+
+</div>
+
+
+<div class="bgwrap">
+    <div class="main">
+        <div class="container con-guide coding-container coding-container-narrow">
+            <h1 id="koncová-tlačítka">Koncová tlačítka</h1>
+
+<h4 id="detekce-stisknutí-tlačítka">Detekce stisknutí tlačítka</h4>
+<p>Tento program ukazuje základní práci s koncovými tlačítky (<a href="https://robotka.robotickytabor.cz/guide/#step-U-16">odkaz na zapojení je zde</a>). U tohoto tlačítka nás budou zajímat stavy uvolněno a stisknuto. Pro tuto operaci nám poslouží funcke <code class="language-plaintext highlighter-rouge">digitalRead</code>. Tato funkce má pouze jeden parametr, kterým je číslo pinu, na kterém tlačítko je a vrací <code class="language-plaintext highlighter-rouge">false</code> pokud je tlačíko stisknuté a <code class="language-plaintext highlighter-rouge">true</code> pokud je uvolněné. Pro zvolená koncová tlačítka je možné použít dva piny: <code class="language-plaintext highlighter-rouge">EXTRA_BUTTON1</code> a <code class="language-plaintext highlighter-rouge">EXTRA_BUTTON2</code>. Následující příklad ukazuje použití této funkce pro práci s koncovými tlačitky.</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+</pre></td><td class="rouge-code"><pre><span class="cp">#include "robotka.h"
+</span>
+<span class="kt">void</span> <span class="nf">setup</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">rkConfig</span> <span class="n">cfg</span><span class="p">;</span>
+    <span class="n">rkSetup</span><span class="p">(</span><span class="n">cfg</span><span class="p">);</span>
+    
+    <span class="k">while</span><span class="p">(</span><span class="nb">true</span><span class="p">){</span>
+        <span class="k">if</span><span class="p">(</span> <span class="n">digitalRead</span><span class="p">(</span><span class="n">EXTRA_BUTTON1</span><span class="p">)</span> <span class="o">==</span> <span class="nb">false</span> <span class="p">){</span> <span class="c1">// tlacitko je stiskle</span>
+            <span class="n">printf</span><span class="p">(</span><span class="s">"Tlacitko 1 je stiskle</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+        <span class="p">}</span>
+        <span class="k">else</span><span class="p">{</span>   <span class="c1">// tlacitko je uvolnene</span>
+            <span class="n">printf</span><span class="p">(</span><span class="s">"Tlacitko 1 je uvolnene</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+        <span class="p">}</span>
+
+        <span class="c1">// druhe koncove tlacitko</span>
+        <span class="k">if</span><span class="p">(</span> <span class="n">digitalRead</span><span class="p">(</span><span class="n">EXTRA_BUTTON2</span><span class="p">)</span> <span class="o">==</span> <span class="nb">false</span> <span class="p">){</span> <span class="c1">// tlacitko je stiskle</span>
+            <span class="n">printf</span><span class="p">(</span><span class="s">"Tlacitko 2 je stiskle</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+        <span class="p">}</span>
+        <span class="k">else</span><span class="p">{</span>   <span class="c1">// tlacitko je uvolnene</span>
+            <span class="n">printf</span><span class="p">(</span><span class="s">"Tlacitko 2 je uvolnene</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+        <span class="p">}</span>
+    <span class="p">}</span>   
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h4 id="jak-program-funguje">Jak program funguje</h4>
+<p>V nekonečné smyčce <code class="language-plaintext highlighter-rouge">while(true)</code> se opakovaně kontrolují podmínky stisknutí obou koncových tlačítek.</p>
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="rouge-code"><pre>    <span class="k">if</span><span class="p">(</span> <span class="n">digitalRead</span><span class="p">(</span><span class="n">EXTRA_BUTTON1</span><span class="p">)</span> <span class="o">==</span> <span class="nb">false</span> <span class="p">){</span> <span class="c1">// tlacitko je stiskle</span>
+        <span class="n">printf</span><span class="p">(</span><span class="s">"Tlacitko 1 je stiskle</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+    <span class="p">}</span>
+    <span class="k">else</span><span class="p">{</span>   <span class="c1">// tlacitko je uvolnene</span>
+        <span class="n">printf</span><span class="p">(</span><span class="s">"Tlacitko 1 je uvolnene</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="err">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+<p>Nejprve se ověří, zda je stisknuté tlačítko pomocí <code class="language-plaintext highlighter-rouge">if</code>. Pokud je stisknuto, tak se vypíše že je stiskuté <code class="language-plaintext highlighter-rouge">if</code>, jinak pokud není stisknuté, tak se vypíše, že je uvolněné <code class="language-plaintext highlighter-rouge">else</code>. Toto se opakuje i pro druhé tlačítko, kde akorát zaměníme číslo pinu z <code class="language-plaintext highlighter-rouge">EXTRA_BUTTON1</code> na <code class="language-plaintext highlighter-rouge">EXTRA_BUTTON2</code>.</p>
+
+
+            <div class="coding-container-narrow mv-xxl">
+                <h1> </h1>
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                        <h5 style="font-weight:400">Další kapitola: <a href="/coding/014_prace_s_tlacitky.html">Práce s tlačítky</a></h5>
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+    </main>
+
+    
+
+    <!--  Scripts-->
+<script src="/js/jquery.min.js"></script>
+<script src="/js/materialize.min.js"></script>
+<script src="/js/jquery.fancybox.min.js"></script>
+<script>window.noZensmooth = true</script>
+<script src="/js/zenscroll-min.js"></script>
+<script src="/js/init.js"></script>
+
+
+    <script>
+(function (root, factory) {
+    if (typeof define === 'function' && define.amd) {
+      define(function() {
+        return factory(root);
+      });
+    } else if (typeof exports === 'object') {
+      module.exports = factory;
+    } else {
+      root.echo = factory(root);
+    }
+  })(this, function (root) {
+  
+    'use strict';
+  
+    var echo = {};
+  
+    var callback = function () {};
+  
+    var offset, poll, delay, useDebounce, unload;
+  
+    var isHidden = function (element) {
+      return (element.offsetParent === null);
+    };
+    
+    var inView = function (element, view) {
+      if (isHidden(element)) {
+        return false;
+      }
+  
+      var box = element.getBoundingClientRect();
+      return (box.right >= view.l && box.bottom >= view.t && box.left <= view.r && box.top <= view.b);
+    };
+  
+    var debounceOrThrottle = function () {
+      if(!useDebounce && !!poll) {
+        return;
+      }
+      clearTimeout(poll);
+      poll = setTimeout(function(){
+        echo.render();
+        poll = null;
+      }, delay);
+    };
+  
+    echo.init = function (opts) {
+      opts = opts || {};
+      var offsetAll = opts.offset || 0;
+      var offsetVertical = opts.offsetVertical || offsetAll;
+      var offsetHorizontal = opts.offsetHorizontal || offsetAll;
+      var optionToInt = function (opt, fallback) {
+        return parseInt(opt || fallback, 10);
+      };
+      offset = {
+        t: optionToInt(opts.offsetTop, offsetVertical),
+        b: optionToInt(opts.offsetBottom, offsetVertical),
+        l: optionToInt(opts.offsetLeft, offsetHorizontal),
+        r: optionToInt(opts.offsetRight, offsetHorizontal)
+      };
+      delay = optionToInt(opts.throttle, 250);
+      useDebounce = opts.debounce !== false;
+      unload = !!opts.unload;
+      callback = opts.callback || callback;
+      echo.render();
+      if (document.addEventListener) {
+        root.addEventListener('scroll', debounceOrThrottle, false);
+        root.addEventListener('load', debounceOrThrottle, false);
+      } else {
+        root.attachEvent('onscroll', debounceOrThrottle);
+        root.attachEvent('onload', debounceOrThrottle);
+      }
+    };
+  
+    echo.render = function (context) {
+      var nodes = (context || document).querySelectorAll('[data-echo], [data-echo-background]');
+      var length = nodes.length;
+      var src, elem;
+      var view = {
+        l: 0 - offset.l,
+        t: 0 - offset.t,
+        b: (root.innerHeight || document.documentElement.clientHeight) + offset.b,
+        r: (root.innerWidth || document.documentElement.clientWidth) + offset.r
+      };
+      for (var i = 0; i < length; i++) {
+        elem = nodes[i];
+        if (inView(elem, view)) {
+  
+          if (unload) {
+            elem.setAttribute('data-echo-placeholder', elem.src);
+          }
+  
+          if (elem.getAttribute('data-echo-background') !== null) {
+            elem.style.backgroundImage = 'url(' + elem.getAttribute('data-echo-background') + ')';
+          }
+          else if (elem.src !== (src = elem.getAttribute('data-echo'))) {
+            elem.src = src;
+          }
+  
+          if (!unload) {
+            elem.removeAttribute('data-echo');
+            elem.removeAttribute('data-echo-background');
+          }
+  
+          callback(elem, 'load');
+        }
+        else if (unload && !!(src = elem.getAttribute('data-echo-placeholder'))) {
+  
+          if (elem.getAttribute('data-echo-background') !== null) {
+            elem.style.backgroundImage = 'url(' + src + ')';
+          }
+          else {
+            elem.src = src;
+          }
+  
+          elem.removeAttribute('data-echo-placeholder');
+          callback(elem, 'unload');
+        }
+      }
+      if (!length) {
+        echo.detach();
+      }
+    };
+  
+    echo.detach = function () {
+      if (document.removeEventListener) {
+        root.removeEventListener('scroll', debounceOrThrottle);
+      } else {
+        root.detachEvent('onscroll', debounceOrThrottle);
+      }
+      clearTimeout(poll);
+    };
+  
+    return echo;
+  
+  });
+</script>
+<script>
+    echo.init({
+      offset: 2500,
+      throttle: 250,
+      unload: false,
+      callback: function (element, op) {
+        //console.log(element, 'has been', op + 'ed')
+      }
+    });
+</script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172441283-1"></script>
+<script>
+  window['ga-disable-UA-172441283-1'] = window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNotTrack === "yes" || navigator.msDoNotTrack === "1";
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-172441283-1');
+</script>
+
+  </body>
+
+</html>

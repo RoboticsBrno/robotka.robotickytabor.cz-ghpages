@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+
+    <title>Větvení</title>
+    <meta name="description" content="Větvení" />
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/jquery.fancybox.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen,projection" href="/assets/main.css">
+    <link rel="canonical" href="https://robotka.robotickytabor.cz/coding/007_vetveni.html" />
+    <link rel="stylesheet" href="/assets/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172441283-1"></script>
+<script>
+  window['ga-disable-UA-172441283-1'] = window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNotTrack === "yes" || navigator.msDoNotTrack === "1";
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-172441283-1');
+</script>
+
+    
+</head>
+
+
+  <body>
+
+    <div class="navbar-fixed">
+<nav class="primary" role="navigation">
+
+    <div class="nav-wrapper container">
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+
+      <a id="logo-container" class="brand-logo" href="/">
+        <img src="/img/logo.png">
+        <span style="border-bottom: 2px solid #ef476f;">Robotka</span>
+      </a>
+
+    
+    
+
+          <ul class="hide-on-med-and-down" style="list-style-type: none; margin-left: 200px">
+            <li><a href="/">Úvod</a></li>
+            <li><a href="/#galerie">Galerie</a></li>
+            
+                
+                    
+                    
+                
+                    
+                    
+                    <li><a href="/guide/">Návod na složení</a></li>
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+            
+
+            
+            <li><a href="/coding/000_vyvojove_prostredi.html">Programování</a></li>
+            
+            <li><a href="/assignments/first/01_01_blikani.html">Úkoly</a></li>
+            
+            <li><a href="/inspiration/000_uvod.html">Inspirace</a></li>
+
+            
+            <li><a href="/recovery/index.html" class="orange-text" style="font-weight: bold">Nefunguje?</a></li>
+
+
+          </ul>
+
+          <ul id="nav-mobile" class="side-nav">
+            <li><a href="/">Úvod</a></li>
+            <li><a href="/#galerie">Galerie</a></li>
+
+              
+                
+                    
+                    
+                
+                    
+                    
+                    <li><a href="/guide/">Návod na složení</a></li>
+                      
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+            
+
+            
+            <li><a href="/coding/000_vyvojove_prostredi.html">Programování</a></li>
+            
+            <li><a href="/assignments/first/01_01_blikani.html">Úkoly</a></li>
+            
+            <li><a href="/inspiration/000_uvod.html">Inspirace</a></li>
+
+            
+            <li><a href="/recovery/index.html" class="orange-text" style="font-weight: bold">Nefunguje?</a></li>
+          </ul>
+
+
+
+          
+
+          <form action="/search" class="search-form">
+            <input type="text" placeholder="Hledat..." name="q">
+            <button type="submit" class="btn-flat white-text"><i class="material-icons">search</i></button>
+          </form>
+
+
+
+    </div>
+</nav>
+</div>
+
+
+    <main>
+        
+<div class="sidenav">
+    
+        <a href="/coding/000_vyvojove_prostredi.html">1. Vývojové prostředí</a>
+        
+    
+        <a href="/coding/001_dalkove_ovladani.html">2. Dálkové ovládání</a>
+        
+    
+        <a href="/coding/002_zalozeni_projektu.html">3. Nový projekt</a>
+        
+    
+        <a href="/coding/003_prvni_program.html">4. První program</a>
+        
+    
+        <a href="/coding/004_formatovani_kodu.html">5. Formátování kódu</a>
+        
+    
+        <a href="/coding/005_komentare.html">6. Komentáře</a>
+        
+    
+        <a href="/coding/006_promenna.html">7. Proměnná</a>
+        
+    
+        <a href="/coding/007_vetveni.html">8. Větvení</a>
+        
+            
+                <a href="#motivace" style="margin-left: 18px; font-size: 80%"> Motivace</a>
+            
+                <a href="#jak-se-větví" style="margin-left: 18px; font-size: 80%"> Jak se větví</a>
+            
+                <a href="#podmínka" style="margin-left: 18px; font-size: 80%"> Podmínka</a>
+            
+                <a href="#propojování-podmínek" style="margin-left: 18px; font-size: 80%"> Propojování podmínek</a>
+            
+        
+    
+        <a href="/coding/008_cyklus.html">9. Cyklus</a>
+        
+    
+        <a href="/coding/009_funkce.html">10. Funkce</a>
+        
+    
+        <a href="/coding/010_LEDky.html">11. LEDky</a>
+        
+    
+        <a href="/coding/011_LED_pasek.html">12. LED pásek</a>
+        
+    
+        <a href="/coding/012_seriova_linka.html">13. Sériová linka</a>
+        
+    
+        <a href="/coding/013_koncova_tlacitka.html">14. Koncová tlačítka</a>
+        
+    
+        <a href="/coding/014_prace_s_tlacitky.html">15. Práce s tlačítky</a>
+        
+    
+        <a href="/coding/015_ultrazvuk.html">16. Ultrazvuk</a>
+        
+    
+        <a href="/coding/016_IR_senzor.html">17. IR senzor</a>
+        
+    
+        <a href="/coding/017_motory.html">18. Motory</a>
+        
+    
+        <a href="/coding/018_monitorovani.html">19. Monitorování robotky</a>
+        
+    
+        <a href="/coding/019_servos.html">20. Serva (hloupá)</a>
+        
+    
+        <a href="/coding/999_upravy_dalkoveho_ovladani.html">21. Úpravy dálkového ovládání</a>
+        
+    
+
+
+    <a style="margin: 32px 12px 0px 12px; padding: 0 2rem;" class="btn-small" href="https://roboticsbrno.github.io/RB3204-RBCX-Robotka-library/modules.html">Dokumentace</a>
+    <a style="margin: 8px 12px 24px 12px; padding: 0 2rem;" class="btn-small green darken-1" href="https://github.com/RoboticsBrno/robotka-examples/archive/master.zip">Příklady</a>
+
+</div>
+
+
+<div class="bgwrap">
+    <div class="main">
+        <div class="container con-guide coding-container coding-container-narrow">
+            <h1 id="větvení">Větvení</h1>
+
+<h4 id="motivace">Motivace</h4>
+<p>Téměř pokaždé je zapotřebí říci programu, aby provedl určitou část kódu, pouze když se něco stane. Příkladem může být rozhodnutí, zda se půjdeme vykoupat do bazénu nebo ne. Pokud je například teplota nad 30 °C, tak se běž ochladit, jinak ne. Stejně tak je možné v programu určovat, která část se má kdy provést. Tomuto se říká větvení.</p>
+
+<h4 id="jak-se-větví">Jak se větví</h4>
+<p>Větvení, lze provádět pomocí těchto tří konstrukcí: <code class="language-plaintext highlighter-rouge">if</code>, <code class="language-plaintext highlighter-rouge">else if</code> a <code class="language-plaintext highlighter-rouge">else</code>.</p>
+
+<h6 id="if-konstrukce"><code class="language-plaintext highlighter-rouge">if</code> konstrukce</h6>
+<p>Základní podmíněný příkaz, který musí v případě větvení existovat vždy. Základem této konstrukce je podmínka, která se uvádí za slovo <code class="language-plaintext highlighter-rouge">if</code> do kulatých závorek.</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre>    <span class="k">if</span><span class="p">(</span><span class="n">podminka</span><span class="p">){</span>
+        <span class="p">...</span><span class="n">kod</span> <span class="n">ktery</span> <span class="n">se</span> <span class="n">provede</span><span class="p">,</span> <span class="n">pokud</span> <span class="n">je</span> <span class="n">podminka</span> <span class="n">splnena</span> <span class="o">-&gt;</span> <span class="nb">true</span><span class="p">...</span>
+    <span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+<p>U této konstrukce docházi k vyhodnocení podmínky pokaždé. Vyhodnocení podmínky znamená, že se zjistí, zda je podmínka pravdivá (<code class="language-plaintext highlighter-rouge">true</code>) nebo nepravdivá (<code class="language-plaintext highlighter-rouge">false</code>). Pokud je pravdivá, provede se kód, který je v ní napsaný, v opačném případě se pokračuje až za <code class="language-plaintext highlighter-rouge">if</code>.</p>
+
+<h6 id="else-if-konstrukce"><code class="language-plaintext highlighter-rouge">else if</code> konstrukce</h6>
+<p>Může existovat jen v případě, kdy před ní byl vyvořený <code class="language-plaintext highlighter-rouge">if</code>. Chová se stejně, jako klasický <code class="language-plaintext highlighter-rouge">if</code> až na to, že k vyhodnocení podmínky dojde až v případě, kdy je předchozí <code class="language-plaintext highlighter-rouge">if</code> nebo <code class="language-plaintext highlighter-rouge">else if</code> nesplněný.</p>
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="rouge-code"><pre>    <span class="k">if</span><span class="p">(</span><span class="n">podminka_1</span><span class="p">){</span>
+        <span class="p">...</span><span class="n">kod</span> <span class="n">ktery</span> <span class="n">se</span> <span class="n">provede</span><span class="p">,</span> <span class="n">pokud</span> <span class="n">je</span> <span class="n">podminka</span> <span class="n">splnena</span> <span class="o">-&gt;</span> <span class="nb">true</span><span class="p">...</span>
+    <span class="p">}</span>
+    <span class="k">else</span> <span class="nf">if</span><span class="p">(</span><span class="n">podminka_2</span><span class="p">){</span>
+        <span class="p">...</span><span class="n">kod</span> <span class="n">ktery</span> <span class="n">se</span> <span class="n">provede</span><span class="p">,</span> <span class="n">pokud</span> <span class="n">je</span> <span class="n">podminka_2</span> <span class="n">splnena</span> <span class="n">a</span> <span class="n">podminka_1</span> <span class="n">nesplnena</span><span class="p">...</span>
+    <span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+<p>V této ukázce se provede kód v <code class="language-plaintext highlighter-rouge">else if</code> pokud je předchozí podmínka_1 neplatná.</p>
+
+<h6 id="else-konstrukce"><code class="language-plaintext highlighter-rouge">else</code> konstrukce</h6>
+<p>Může existovat jen v případě, kdy před ní byl vyvořený <code class="language-plaintext highlighter-rouge">if</code>. Oproti předchozímu <code class="language-plaintext highlighter-rouge">if</code> a <code class="language-plaintext highlighter-rouge">else if</code> se liší tím, že se neuvádí podmínka. Jeho úkolem je provést kód v něm napsaný jen v případě, že předchozí <code class="language-plaintext highlighter-rouge">if</code> a <code class="language-plaintext highlighter-rouge">else if</code> nejsou splněny.</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="rouge-code"><pre>    <span class="k">if</span><span class="p">(</span><span class="n">podminka</span><span class="p">){</span>
+        <span class="p">...</span><span class="n">kod</span> <span class="n">ktery</span> <span class="n">se</span> <span class="n">provede</span><span class="p">,</span> <span class="n">pokud</span> <span class="n">je</span> <span class="n">podminka</span> <span class="n">splnena</span> <span class="o">-&gt;</span> <span class="nb">true</span><span class="p">...</span>
+    <span class="p">}</span>
+    <span class="k">else</span><span class="p">{</span>
+        <span class="p">...</span><span class="n">kod</span> <span class="n">ktery</span> <span class="n">se</span> <span class="n">provede</span><span class="p">,</span> <span class="n">pokud</span> <span class="n">je</span> <span class="n">podminka</span> <span class="n">nesplnena</span><span class="p">...</span>
+    <span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Poznámka: V jednotlivých konstrukcích je možné libovolně vnořovat další tyto konstrukce, avšak musí platit, že první konstrukcí je <code class="language-plaintext highlighter-rouge">if</code>, následně může následovat několik <code class="language-plaintext highlighter-rouge">else if</code> konstrukcí a pokud se rozhodneme použít <code class="language-plaintext highlighter-rouge">else</code>, tak ten dáme až na konec. Oproti <code class="language-plaintext highlighter-rouge">if</code> a <code class="language-plaintext highlighter-rouge">else if</code>, kterých může existovat vícero, tak else může být v rámci jedné <code class="language-plaintext highlighter-rouge">if-else</code> kombinaci použito jen jendou.</p>
+
+<h4 id="podmínka">Podmínka</h4>
+<p>Podmínka nám říká, kdy se daný <code class="language-plaintext highlighter-rouge">if</code>, <code class="language-plaintext highlighter-rouge">else if</code> nebo <code class="language-plaintext highlighter-rouge">else</code> má provést. Je možné zjednodušeně napsat:</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre>    <span class="k">if</span><span class="p">(</span><span class="nb">true</span><span class="p">){</span>
+        <span class="p">...</span><span class="n">kod</span><span class="p">,</span> <span class="n">ktery</span> <span class="n">se</span> <span class="n">provede</span> <span class="n">vzdy</span><span class="p">...</span>
+    <span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+<p>Tento if se provede vždy, protože je jeho podmínka rovna pravdě (<code class="language-plaintext highlighter-rouge">true</code>). Naopak</p>
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre>    <span class="k">if</span><span class="p">(</span><span class="nb">false</span><span class="p">){</span>
+        <span class="p">...</span><span class="n">kod</span><span class="p">,</span> <span class="n">ktery</span> <span class="n">se</span> <span class="n">neprovede</span> <span class="n">nidky</span><span class="p">...</span>
+    <span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+<p>se neprovede nikdy, protože je podmínka nesplněna. Podle ukázky výše je patrné, že výsledek výrazu, který je do podmínky (kulatých závorek) vložen, musí reprezentovat hodnotu typu <code class="language-plaintext highlighter-rouge">bool</code>, neboli pravda <code class="language-plaintext highlighter-rouge">true</code> nebo nepravda <code class="language-plaintext highlighter-rouge">false</code>. Je tedy možné, vytvoři proměnnou typu <code class="language-plaintext highlighter-rouge">bool</code>, přiřadit do ní výraz, jehož výsledek je <code class="language-plaintext highlighter-rouge">true</code> nebo <code class="language-plaintext highlighter-rouge">false</code> a tuto proměnnou vložit do podmínky <code class="language-plaintext highlighter-rouge">if</code> nebo <code class="language-plaintext highlighter-rouge">else if </code>. S výše uvedenou podmínkou si dlouho nevystačíme a proto použijeme relační operátory, které nám pomohou vytvářet komplikovanější podmínky. Mezi základní relační operátory patří:</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">==</code> označuje porovnávání, takže <code class="language-plaintext highlighter-rouge">1 == 1</code> označuje, že se 1 rovná 1</li>
+  <li><code class="language-plaintext highlighter-rouge">!=</code> vykřičník před rovnítkem označuje opak, tudíž tento operátor značí nerovnost, tedy <code class="language-plaintext highlighter-rouge">1 != 2</code> označuje, že se 1 nerovná 2</li>
+  <li><code class="language-plaintext highlighter-rouge">&lt;</code> menší než</li>
+  <li><code class="language-plaintext highlighter-rouge">&gt;</code> větší než</li>
+  <li><code class="language-plaintext highlighter-rouge">&lt;=</code> menší rovno než</li>
+  <li><code class="language-plaintext highlighter-rouge">&gt;=</code> větší rovno než</li>
+</ul>
+
+<p class="important"><code class="language-plaintext highlighter-rouge">=</code> označuje přiřazení hodnoty do proměnné, například <code class="language-plaintext highlighter-rouge">promenna =  2;</code>, ale <code class="language-plaintext highlighter-rouge">==</code> označuje porovnání, jehož výsledkem je pravda <code class="language-plaintext highlighter-rouge">true</code> nebo nepravda <code class="language-plaintext highlighter-rouge">false</code>.</p>
+
+<p class="important">Výsledek výrazu v proměnné nabývá hodnotu pravda <code class="language-plaintext highlighter-rouge">true</code> nebo nepravdu <code class="language-plaintext highlighter-rouge">false</code>.</p>
+
+<p>Ukázka relačních operátorů:</p>
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+</pre></td><td class="rouge-code"><pre><span class="cp">#include "robotka.h"
+</span>
+<span class="kt">void</span> <span class="nf">setup</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">rkConfig</span> <span class="n">cfg</span><span class="p">;</span>
+    <span class="n">rkSetup</span><span class="p">(</span><span class="n">cfg</span><span class="p">);</span>
+
+    <span class="kt">int</span> <span class="n">batteryState</span> <span class="o">=</span> <span class="n">rkBatteryPercent</span><span class="p">();</span>
+
+    <span class="c1">// Podle toho, jak moc je nabita baterie, rozsvitime zelenou, zlutou nebo cervenou LED.</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">batteryState</span> <span class="o">&gt;</span> <span class="mi">50</span><span class="p">)</span> <span class="p">{</span> <span class="c1">// pokud batteryState je vetsi nez 50, viz dalsi sekce</span>
+        <span class="n">rkLedBlue</span><span class="p">(</span><span class="nb">true</span><span class="p">);</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">batteryState</span> <span class="o">&gt;</span> <span class="mi">25</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">rkLedYellow</span><span class="p">(</span><span class="nb">true</span><span class="p">);</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+         <span class="n">rkLedRed</span><span class="p">(</span><span class="nb">true</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h4 id="propojování-podmínek">Propojování podmínek</h4>
+<p>Podmínky je možné propojovat do jedné delší pomocí logických operátorů. Jsou jimi</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">&amp;&amp;</code> (logický součin) říká nám, že musí platit obě podmínky, aby byla podmínka splněna, jinak je nesplněna</li>
+  <li><code class="language-plaintext highlighter-rouge">||</code> (logický součet) říká nám, že musí platit alespoň jedna podmínka z nich, aby byla podmínka splněna, jinak je nesplněna</li>
+</ul>
+
+<p>Ukázka:
+Následující programy jsou stejné, druhý ovšem využívá logické operátory.</p>
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+</pre></td><td class="rouge-code"><pre><span class="cp">#include "robotka.h"
+</span>
+<span class="kt">void</span> <span class="nf">setup</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">rkConfig</span> <span class="n">cfg</span><span class="p">;</span>
+    <span class="n">rkSetup</span><span class="p">(</span><span class="n">cfg</span><span class="p">);</span>
+
+    <span class="kt">int</span> <span class="n">batteryState</span> <span class="o">=</span> <span class="n">rkBatteryPercent</span><span class="p">();</span>
+
+    <span class="k">if</span><span class="p">(</span><span class="n">batteryState</span> <span class="o">&lt;</span> <span class="mi">100</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">if</span><span class="p">(</span><span class="n">batteryState</span> <span class="o">&gt;</span> <span class="mi">10</span><span class="p">){</span>
+            <span class="n">rkLedGreen</span><span class="p">(</span><span class="nb">true</span><span class="p">);</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+</pre></td><td class="rouge-code"><pre><span class="cp">#include "robotka.h"
+</span>
+<span class="kt">void</span> <span class="nf">setup</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">rkConfig</span> <span class="n">cfg</span><span class="p">;</span>
+    <span class="n">rkSetup</span><span class="p">(</span><span class="n">cfg</span><span class="p">);</span>
+
+    <span class="kt">int</span> <span class="n">batteryState</span> <span class="o">=</span> <span class="n">rkBatteryPercent</span><span class="p">();</span>
+
+    <span class="k">if</span><span class="p">((</span><span class="n">batteryState</span> <span class="o">&lt;</span> <span class="mi">100</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="p">(</span><span class="n">batteryState</span> <span class="o">&gt;</span> <span class="mi">10</span><span class="p">))</span> <span class="p">{</span>
+        <span class="n">rkLedGreen</span><span class="p">(</span><span class="nb">true</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+
+            <div class="coding-container-narrow mv-xxl">
+                <h1> </h1>
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                        <h5 style="font-weight:400">Další kapitola: <a href="/coding/008_cyklus.html">Cyklus</a></h5>
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+    </main>
+
+    
+
+    <!--  Scripts-->
+<script src="/js/jquery.min.js"></script>
+<script src="/js/materialize.min.js"></script>
+<script src="/js/jquery.fancybox.min.js"></script>
+<script>window.noZensmooth = true</script>
+<script src="/js/zenscroll-min.js"></script>
+<script src="/js/init.js"></script>
+
+
+    <script>
+(function (root, factory) {
+    if (typeof define === 'function' && define.amd) {
+      define(function() {
+        return factory(root);
+      });
+    } else if (typeof exports === 'object') {
+      module.exports = factory;
+    } else {
+      root.echo = factory(root);
+    }
+  })(this, function (root) {
+  
+    'use strict';
+  
+    var echo = {};
+  
+    var callback = function () {};
+  
+    var offset, poll, delay, useDebounce, unload;
+  
+    var isHidden = function (element) {
+      return (element.offsetParent === null);
+    };
+    
+    var inView = function (element, view) {
+      if (isHidden(element)) {
+        return false;
+      }
+  
+      var box = element.getBoundingClientRect();
+      return (box.right >= view.l && box.bottom >= view.t && box.left <= view.r && box.top <= view.b);
+    };
+  
+    var debounceOrThrottle = function () {
+      if(!useDebounce && !!poll) {
+        return;
+      }
+      clearTimeout(poll);
+      poll = setTimeout(function(){
+        echo.render();
+        poll = null;
+      }, delay);
+    };
+  
+    echo.init = function (opts) {
+      opts = opts || {};
+      var offsetAll = opts.offset || 0;
+      var offsetVertical = opts.offsetVertical || offsetAll;
+      var offsetHorizontal = opts.offsetHorizontal || offsetAll;
+      var optionToInt = function (opt, fallback) {
+        return parseInt(opt || fallback, 10);
+      };
+      offset = {
+        t: optionToInt(opts.offsetTop, offsetVertical),
+        b: optionToInt(opts.offsetBottom, offsetVertical),
+        l: optionToInt(opts.offsetLeft, offsetHorizontal),
+        r: optionToInt(opts.offsetRight, offsetHorizontal)
+      };
+      delay = optionToInt(opts.throttle, 250);
+      useDebounce = opts.debounce !== false;
+      unload = !!opts.unload;
+      callback = opts.callback || callback;
+      echo.render();
+      if (document.addEventListener) {
+        root.addEventListener('scroll', debounceOrThrottle, false);
+        root.addEventListener('load', debounceOrThrottle, false);
+      } else {
+        root.attachEvent('onscroll', debounceOrThrottle);
+        root.attachEvent('onload', debounceOrThrottle);
+      }
+    };
+  
+    echo.render = function (context) {
+      var nodes = (context || document).querySelectorAll('[data-echo], [data-echo-background]');
+      var length = nodes.length;
+      var src, elem;
+      var view = {
+        l: 0 - offset.l,
+        t: 0 - offset.t,
+        b: (root.innerHeight || document.documentElement.clientHeight) + offset.b,
+        r: (root.innerWidth || document.documentElement.clientWidth) + offset.r
+      };
+      for (var i = 0; i < length; i++) {
+        elem = nodes[i];
+        if (inView(elem, view)) {
+  
+          if (unload) {
+            elem.setAttribute('data-echo-placeholder', elem.src);
+          }
+  
+          if (elem.getAttribute('data-echo-background') !== null) {
+            elem.style.backgroundImage = 'url(' + elem.getAttribute('data-echo-background') + ')';
+          }
+          else if (elem.src !== (src = elem.getAttribute('data-echo'))) {
+            elem.src = src;
+          }
+  
+          if (!unload) {
+            elem.removeAttribute('data-echo');
+            elem.removeAttribute('data-echo-background');
+          }
+  
+          callback(elem, 'load');
+        }
+        else if (unload && !!(src = elem.getAttribute('data-echo-placeholder'))) {
+  
+          if (elem.getAttribute('data-echo-background') !== null) {
+            elem.style.backgroundImage = 'url(' + src + ')';
+          }
+          else {
+            elem.src = src;
+          }
+  
+          elem.removeAttribute('data-echo-placeholder');
+          callback(elem, 'unload');
+        }
+      }
+      if (!length) {
+        echo.detach();
+      }
+    };
+  
+    echo.detach = function () {
+      if (document.removeEventListener) {
+        root.removeEventListener('scroll', debounceOrThrottle);
+      } else {
+        root.detachEvent('onscroll', debounceOrThrottle);
+      }
+      clearTimeout(poll);
+    };
+  
+    return echo;
+  
+  });
+</script>
+<script>
+    echo.init({
+      offset: 2500,
+      throttle: 250,
+      unload: false,
+      callback: function (element, op) {
+        //console.log(element, 'has been', op + 'ed')
+      }
+    });
+</script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172441283-1"></script>
+<script>
+  window['ga-disable-UA-172441283-1'] = window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNotTrack === "yes" || navigator.msDoNotTrack === "1";
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-172441283-1');
+</script>
+
+  </body>
+
+</html>

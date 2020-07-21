@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+
+    <title>Práce s tlačítky</title>
+    <meta name="description" content="Práce s tlačítky" />
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/jquery.fancybox.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen,projection" href="/assets/main.css">
+    <link rel="canonical" href="https://robotka.robotickytabor.cz/coding/014_prace_s_tlacitky.html" />
+    <link rel="stylesheet" href="/assets/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172441283-1"></script>
+<script>
+  window['ga-disable-UA-172441283-1'] = window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNotTrack === "yes" || navigator.msDoNotTrack === "1";
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-172441283-1');
+</script>
+
+    
+</head>
+
+
+  <body>
+
+    <div class="navbar-fixed">
+<nav class="primary" role="navigation">
+
+    <div class="nav-wrapper container">
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+
+      <a id="logo-container" class="brand-logo" href="/">
+        <img src="/img/logo.png">
+        <span style="border-bottom: 2px solid #ef476f;">Robotka</span>
+      </a>
+
+    
+    
+
+          <ul class="hide-on-med-and-down" style="list-style-type: none; margin-left: 200px">
+            <li><a href="/">Úvod</a></li>
+            <li><a href="/#galerie">Galerie</a></li>
+            
+                
+                    
+                    
+                
+                    
+                    
+                    <li><a href="/guide/">Návod na složení</a></li>
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+            
+
+            
+            <li><a href="/coding/000_vyvojove_prostredi.html">Programování</a></li>
+            
+            <li><a href="/assignments/first/01_01_blikani.html">Úkoly</a></li>
+            
+            <li><a href="/inspiration/000_uvod.html">Inspirace</a></li>
+
+            
+            <li><a href="/recovery/index.html" class="orange-text" style="font-weight: bold">Nefunguje?</a></li>
+
+
+          </ul>
+
+          <ul id="nav-mobile" class="side-nav">
+            <li><a href="/">Úvod</a></li>
+            <li><a href="/#galerie">Galerie</a></li>
+
+              
+                
+                    
+                    
+                
+                    
+                    
+                    <li><a href="/guide/">Návod na složení</a></li>
+                      
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+            
+
+            
+            <li><a href="/coding/000_vyvojove_prostredi.html">Programování</a></li>
+            
+            <li><a href="/assignments/first/01_01_blikani.html">Úkoly</a></li>
+            
+            <li><a href="/inspiration/000_uvod.html">Inspirace</a></li>
+
+            
+            <li><a href="/recovery/index.html" class="orange-text" style="font-weight: bold">Nefunguje?</a></li>
+          </ul>
+
+
+
+          
+
+          <form action="/search" class="search-form">
+            <input type="text" placeholder="Hledat..." name="q">
+            <button type="submit" class="btn-flat white-text"><i class="material-icons">search</i></button>
+          </form>
+
+
+
+    </div>
+</nav>
+</div>
+
+
+    <main>
+        
+<div class="sidenav">
+    
+        <a href="/coding/000_vyvojove_prostredi.html">1. Vývojové prostředí</a>
+        
+    
+        <a href="/coding/001_dalkove_ovladani.html">2. Dálkové ovládání</a>
+        
+    
+        <a href="/coding/002_zalozeni_projektu.html">3. Nový projekt</a>
+        
+    
+        <a href="/coding/003_prvni_program.html">4. První program</a>
+        
+    
+        <a href="/coding/004_formatovani_kodu.html">5. Formátování kódu</a>
+        
+    
+        <a href="/coding/005_komentare.html">6. Komentáře</a>
+        
+    
+        <a href="/coding/006_promenna.html">7. Proměnná</a>
+        
+    
+        <a href="/coding/007_vetveni.html">8. Větvení</a>
+        
+    
+        <a href="/coding/008_cyklus.html">9. Cyklus</a>
+        
+    
+        <a href="/coding/009_funkce.html">10. Funkce</a>
+        
+    
+        <a href="/coding/010_LEDky.html">11. LEDky</a>
+        
+    
+        <a href="/coding/011_LED_pasek.html">12. LED pásek</a>
+        
+    
+        <a href="/coding/012_seriova_linka.html">13. Sériová linka</a>
+        
+    
+        <a href="/coding/013_koncova_tlacitka.html">14. Koncová tlačítka</a>
+        
+    
+        <a href="/coding/014_prace_s_tlacitky.html">15. Práce s tlačítky</a>
+        
+            
+                <a href="#použitelné-funkce" style="margin-left: 18px; font-size: 80%"> Použitelné funkce</a>
+            
+        
+    
+        <a href="/coding/015_ultrazvuk.html">16. Ultrazvuk</a>
+        
+    
+        <a href="/coding/016_IR_senzor.html">17. IR senzor</a>
+        
+    
+        <a href="/coding/017_motory.html">18. Motory</a>
+        
+    
+        <a href="/coding/018_monitorovani.html">19. Monitorování robotky</a>
+        
+    
+        <a href="/coding/019_servos.html">20. Serva (hloupá)</a>
+        
+    
+        <a href="/coding/999_upravy_dalkoveho_ovladani.html">21. Úpravy dálkového ovládání</a>
+        
+    
+
+
+    <a style="margin: 32px 12px 0px 12px; padding: 0 2rem;" class="btn-small" href="https://roboticsbrno.github.io/RB3204-RBCX-Robotka-library/modules.html">Dokumentace</a>
+    <a style="margin: 8px 12px 24px 12px; padding: 0 2rem;" class="btn-small green darken-1" href="https://github.com/RoboticsBrno/robotka-examples/archive/master.zip">Příklady</a>
+
+</div>
+
+
+<div class="bgwrap">
+    <div class="main">
+        <div class="container con-guide coding-container coding-container-narrow">
+            <h1 id="práce-s-tlačítky">Práce s tlačítky</h1>
+
+<h4 id="použitelné-funkce">Použitelné funkce</h4>
+<p>Tento program ukazuje základní práci s vestavěnými tlačitky: <code class="language-plaintext highlighter-rouge">UP</code>, <code class="language-plaintext highlighter-rouge">DOWN</code>, <code class="language-plaintext highlighter-rouge">LEFT</code>, <code class="language-plaintext highlighter-rouge">RIGHT</code>, <code class="language-plaintext highlighter-rouge">ON</code> a <code class="language-plaintext highlighter-rouge">OFF</code>. Tato tlačítka je v programu nezbytné označovat předponou <code class="language-plaintext highlighter-rouge">BTN_</code>, tedy tlačítko <code class="language-plaintext highlighter-rouge">BTN_UP</code> reprezentuje tlačítko <code class="language-plaintext highlighter-rouge">UP</code> na desce, tlačítko <code class="language-plaintext highlighter-rouge">BTN_LEFT</code> potom <code class="language-plaintext highlighter-rouge">LEFT</code>, a tak dále. Oproti koncovým tlačitkům, které jsou popsány v předchozí kapitole máme větší <a href="https://roboticsbrno.github.io/RB3204-RBCX-Robotka-library/group__buttons.html#ga3bc0ef766782822a9399654f97fa224c"> možnosti</a>, jak s tlačítkem pracovat (detekovat více stavů):</p>
+
+<h6 id="funkce-pro-všechna-tlačítka">Funkce pro všechna tlačítka</h6>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">rkButtonIsPressed</code> - Detekuje, zda je tlačítko stisknuto. Vrací logickou hodnotu pravda <code class="language-plaintext highlighter-rouge">true</code>, pokud je tlačítko stisknuté, jinak vrací nepravda <code class="language-plaintext highlighter-rouge">false</code>. Jako parametr očekává jedno z tlačítek (<code class="language-plaintext highlighter-rouge">BTN_UP</code>, <code class="language-plaintext highlighter-rouge">BTN_DOWN</code>, <code class="language-plaintext highlighter-rouge">BTN_LEFT</code>, <code class="language-plaintext highlighter-rouge">BTN_RIGHT</code>, <code class="language-plaintext highlighter-rouge">BTN_ON</code> nebo <code class="language-plaintext highlighter-rouge">BTN_OFF</code>) a hodnotu <code class="language-plaintext highlighter-rouge">true</code>, pokud chceme čekat na uvolnění nebo <code class="language-plaintext highlighter-rouge">false</code> pokud na uvolnění čekat nechceme. Například <code class="language-plaintext highlighter-rouge">rkButtonIsPressed(BTN_UP, false)</code> čeká pouze na stisk tlačíka <code class="language-plaintext highlighter-rouge">UP</code>, ale už nečeká na jeho uvolnění.</li>
+  <li><code class="language-plaintext highlighter-rouge">rkButtonWaitForRelease</code>  - Čeká, stisknuté tlačítko není uvolněno. Tato funkce pozastaví běh celého programu, dokud se tlačítko neuvolní. Jako parametr požaduje pouze jedno z tlačítek <code class="language-plaintext highlighter-rouge">BTN_UP</code>, <code class="language-plaintext highlighter-rouge">BTN_DOWN</code>, <code class="language-plaintext highlighter-rouge">BTN_LEFT</code>, <code class="language-plaintext highlighter-rouge">BTN_RIGHT</code>, <code class="language-plaintext highlighter-rouge">BTN_ON</code> nebo <code class="language-plaintext highlighter-rouge">BTN_OFF</code>.</li>
+</ul>
+
+<h6 id="funkce-pro-jednotlivá-tlačítka">Funkce pro jednotlivá tlačítka</h6>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">rkButtonDown</code> -  Detekuje, zda je stisknuto tlačítko Down -&gt; funguje pouze pro tlačítko <code class="language-plaintext highlighter-rouge">BTN_DOWN</code></li>
+  <li><code class="language-plaintext highlighter-rouge">rkButtonUp</code> -  Detekuje, zda je stisknuto tlačítko UP -&gt; funguje pouze pro tlačítko <code class="language-plaintext highlighter-rouge">BTN_UP</code></li>
+  <li><code class="language-plaintext highlighter-rouge">rkButtonLeft</code> -  Detekuje, zda je stisknuto tlačítko LEFT -&gt; funguje pouze pro tlačítko <code class="language-plaintext highlighter-rouge">BTN_LEFT</code></li>
+  <li><code class="language-plaintext highlighter-rouge">rkButtonRight</code> -  Detekuje, zda je stisknuto tlačítko RIGHT -&gt; funguje pouze pro tlačítko <code class="language-plaintext highlighter-rouge">BTN_RIGHT</code></li>
+  <li><code class="language-plaintext highlighter-rouge">rkButtonOn</code> -  Detekuje, zda je stisknuto tlačítko ON -&gt; funguje pouze pro tlačítko <code class="language-plaintext highlighter-rouge">BTN_ON</code></li>
+  <li><code class="language-plaintext highlighter-rouge">rkButtonOff</code> -  Detekuje, zda je stisknuto tlačítko OFF -&gt; funguje pouze pro tlačítko <code class="language-plaintext highlighter-rouge">BTN_OFF</code>
+Všechny tyto funkce očekávají pouzze jeden parametr a to, <code class="language-plaintext highlighter-rouge">true</code>, pokud chceme, aby se čekalo na uvolnění, jinak <code class="language-plaintext highlighter-rouge">false</code>.</li>
+</ul>
+
+<p>Ukázka detekce stavu tlačítka:</p>
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+</pre></td><td class="rouge-code"><pre><span class="cp">#include "robotka.h"
+</span>
+<span class="kt">void</span> <span class="nf">setup</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">rkConfig</span> <span class="n">cfg</span><span class="p">;</span>
+    <span class="n">rkSetup</span><span class="p">(</span><span class="n">cfg</span><span class="p">);</span>
+    
+    <span class="k">while</span><span class="p">(</span><span class="nb">true</span><span class="p">){</span>
+        <span class="k">if</span><span class="p">(</span> <span class="n">rkButtonIsPressed</span><span class="p">(</span><span class="n">BTN_UP</span><span class="p">,</span> <span class="nb">false</span><span class="p">)</span> <span class="p">){</span> <span class="c1">// tlacitko je stiskle a necekame na uvolneni</span>
+            <span class="n">printf</span><span class="p">(</span><span class="s">"Tlacitko UP je stiskle</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+        <span class="p">}</span>
+        <span class="k">else</span><span class="p">{</span>   <span class="c1">// tlacitko je uvolnene</span>
+            <span class="n">printf</span><span class="p">(</span><span class="s">"Tlacitko UP je uvolnene</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+        <span class="p">}</span>
+    <span class="p">}</span>   
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+<p>Předchozí ukázka vypíše, že je tlačítko <code class="language-plaintext highlighter-rouge">UP</code> stisknuté, pomocí funkce <code class="language-plaintext highlighter-rouge">rkButtonIsPressed()</code>. Pokud se stiskne, tak vypíše že stistklé je <code class="language-plaintext highlighter-rouge">if</code>, jinak vypíše, že není stisklé <code class="language-plaintext highlighter-rouge">else</code>.</p>
+
+<p>Ukázka čekání na uvolneni tlačítka:</p>
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+</pre></td><td class="rouge-code"><pre><span class="cp">#include "robotka.h"
+</span>
+<span class="kt">void</span> <span class="nf">setup</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">rkConfig</span> <span class="n">cfg</span><span class="p">;</span>
+    <span class="n">rkSetup</span><span class="p">(</span><span class="n">cfg</span><span class="p">);</span>
+    
+    <span class="k">while</span><span class="p">(</span><span class="nb">true</span><span class="p">){</span>
+        <span class="n">printf</span><span class="p">(</span><span class="s">"Cekam na uvolneni tlačítka UP!</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+        <span class="n">rkButtonWaitForRelease</span><span class="p">(</span><span class="n">BTN_UP</span><span class="p">);</span> <span class="c1">// ceka, dokud neni tlacitko UP uvolneno</span>
+        <span class="n">printf</span><span class="p">(</span><span class="s">"Tlačítko UP bylo uvolneno!</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+    <span class="p">}</span>   
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+<p>Tento program vypíše, že čeká na uvolnění tlačítka <code class="language-plaintext highlighter-rouge">UP</code>. Následně čeká na funkci <code class="language-plaintext highlighter-rouge">rkButtonWaitForRelease()</code>, dokud se tlačítko neuvolní. Po uvolnění se vypíše, že se uvolnilo.</p>
+
+<p>Ukázka čekání na stisk dvou tlačítek:</p>
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+</pre></td><td class="rouge-code"><pre><span class="cp">#include "robotka.h"
+</span>
+<span class="kt">void</span> <span class="nf">setup</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">rkConfig</span> <span class="n">cfg</span><span class="p">;</span>
+    <span class="n">rkSetup</span><span class="p">(</span><span class="n">cfg</span><span class="p">);</span>
+    
+    <span class="k">while</span><span class="p">(</span><span class="nb">true</span><span class="p">){</span>
+        <span class="c1">// kontrola, zda je zmacknute tlacitko LEFT i RIGHT soucasne</span>
+        <span class="k">if</span><span class="p">(</span> <span class="n">rkButtonIsPressed</span><span class="p">(</span><span class="n">BTN_LEFT</span><span class="p">,</span> <span class="nb">false</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="n">rkButtonIsPressed</span><span class="p">(</span><span class="n">BTN_RIGHT</span><span class="p">,</span> <span class="nb">false</span><span class="p">)</span> <span class="p">){</span>
+            <span class="n">printf</span><span class="p">(</span><span class="s">"Tlačítko LEFT a RIGHT je stisknuto!</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+        <span class="p">}</span>
+    <span class="p">}</span>   
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+<p>Předchozí program je možné číst následovně. Je stisknuté tlačítko <code class="language-plaintext highlighter-rouge">LEFT</code> a zároveň je stisknuté tlačítko <code class="language-plaintext highlighter-rouge">RIGHT</code>? Pokud ano, tak tuto informaci vypíše vypíše. Tento program lze lépe zapsat takto:</p>
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+</pre></td><td class="rouge-code"><pre><span class="cp">#include "robotka.h"
+</span>
+<span class="kt">void</span> <span class="nf">setup</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">rkConfig</span> <span class="n">cfg</span><span class="p">;</span>
+    <span class="n">rkSetup</span><span class="p">(</span><span class="n">cfg</span><span class="p">);</span>
+    
+    <span class="k">while</span><span class="p">(</span><span class="nb">true</span><span class="p">){</span>
+        <span class="c1">// kontrola, zda je zmacknute tlacitko LEFT i RIGHT soucasne</span>
+        <span class="k">if</span><span class="p">(</span> <span class="n">rkButtonLeft</span><span class="p">(</span><span class="nb">false</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="n">rkButtonRight</span><span class="p">(</span><span class="nb">false</span><span class="p">)</span> <span class="p">){</span>
+            <span class="n">printf</span><span class="p">(</span><span class="s">"Tlačítko LEFT a RIGHT je stisknuto!</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+        <span class="p">}</span>
+    <span class="p">}</span>   
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+
+            <div class="coding-container-narrow mv-xxl">
+                <h1> </h1>
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                        <h5 style="font-weight:400">Další kapitola: <a href="/coding/015_ultrazvuk.html">Ultrazvuk</a></h5>
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+    </main>
+
+    
+
+    <!--  Scripts-->
+<script src="/js/jquery.min.js"></script>
+<script src="/js/materialize.min.js"></script>
+<script src="/js/jquery.fancybox.min.js"></script>
+<script>window.noZensmooth = true</script>
+<script src="/js/zenscroll-min.js"></script>
+<script src="/js/init.js"></script>
+
+
+    <script>
+(function (root, factory) {
+    if (typeof define === 'function' && define.amd) {
+      define(function() {
+        return factory(root);
+      });
+    } else if (typeof exports === 'object') {
+      module.exports = factory;
+    } else {
+      root.echo = factory(root);
+    }
+  })(this, function (root) {
+  
+    'use strict';
+  
+    var echo = {};
+  
+    var callback = function () {};
+  
+    var offset, poll, delay, useDebounce, unload;
+  
+    var isHidden = function (element) {
+      return (element.offsetParent === null);
+    };
+    
+    var inView = function (element, view) {
+      if (isHidden(element)) {
+        return false;
+      }
+  
+      var box = element.getBoundingClientRect();
+      return (box.right >= view.l && box.bottom >= view.t && box.left <= view.r && box.top <= view.b);
+    };
+  
+    var debounceOrThrottle = function () {
+      if(!useDebounce && !!poll) {
+        return;
+      }
+      clearTimeout(poll);
+      poll = setTimeout(function(){
+        echo.render();
+        poll = null;
+      }, delay);
+    };
+  
+    echo.init = function (opts) {
+      opts = opts || {};
+      var offsetAll = opts.offset || 0;
+      var offsetVertical = opts.offsetVertical || offsetAll;
+      var offsetHorizontal = opts.offsetHorizontal || offsetAll;
+      var optionToInt = function (opt, fallback) {
+        return parseInt(opt || fallback, 10);
+      };
+      offset = {
+        t: optionToInt(opts.offsetTop, offsetVertical),
+        b: optionToInt(opts.offsetBottom, offsetVertical),
+        l: optionToInt(opts.offsetLeft, offsetHorizontal),
+        r: optionToInt(opts.offsetRight, offsetHorizontal)
+      };
+      delay = optionToInt(opts.throttle, 250);
+      useDebounce = opts.debounce !== false;
+      unload = !!opts.unload;
+      callback = opts.callback || callback;
+      echo.render();
+      if (document.addEventListener) {
+        root.addEventListener('scroll', debounceOrThrottle, false);
+        root.addEventListener('load', debounceOrThrottle, false);
+      } else {
+        root.attachEvent('onscroll', debounceOrThrottle);
+        root.attachEvent('onload', debounceOrThrottle);
+      }
+    };
+  
+    echo.render = function (context) {
+      var nodes = (context || document).querySelectorAll('[data-echo], [data-echo-background]');
+      var length = nodes.length;
+      var src, elem;
+      var view = {
+        l: 0 - offset.l,
+        t: 0 - offset.t,
+        b: (root.innerHeight || document.documentElement.clientHeight) + offset.b,
+        r: (root.innerWidth || document.documentElement.clientWidth) + offset.r
+      };
+      for (var i = 0; i < length; i++) {
+        elem = nodes[i];
+        if (inView(elem, view)) {
+  
+          if (unload) {
+            elem.setAttribute('data-echo-placeholder', elem.src);
+          }
+  
+          if (elem.getAttribute('data-echo-background') !== null) {
+            elem.style.backgroundImage = 'url(' + elem.getAttribute('data-echo-background') + ')';
+          }
+          else if (elem.src !== (src = elem.getAttribute('data-echo'))) {
+            elem.src = src;
+          }
+  
+          if (!unload) {
+            elem.removeAttribute('data-echo');
+            elem.removeAttribute('data-echo-background');
+          }
+  
+          callback(elem, 'load');
+        }
+        else if (unload && !!(src = elem.getAttribute('data-echo-placeholder'))) {
+  
+          if (elem.getAttribute('data-echo-background') !== null) {
+            elem.style.backgroundImage = 'url(' + src + ')';
+          }
+          else {
+            elem.src = src;
+          }
+  
+          elem.removeAttribute('data-echo-placeholder');
+          callback(elem, 'unload');
+        }
+      }
+      if (!length) {
+        echo.detach();
+      }
+    };
+  
+    echo.detach = function () {
+      if (document.removeEventListener) {
+        root.removeEventListener('scroll', debounceOrThrottle);
+      } else {
+        root.detachEvent('onscroll', debounceOrThrottle);
+      }
+      clearTimeout(poll);
+    };
+  
+    return echo;
+  
+  });
+</script>
+<script>
+    echo.init({
+      offset: 2500,
+      throttle: 250,
+      unload: false,
+      callback: function (element, op) {
+        //console.log(element, 'has been', op + 'ed')
+      }
+    });
+</script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172441283-1"></script>
+<script>
+  window['ga-disable-UA-172441283-1'] = window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNotTrack === "yes" || navigator.msDoNotTrack === "1";
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-172441283-1');
+</script>
+
+  </body>
+
+</html>

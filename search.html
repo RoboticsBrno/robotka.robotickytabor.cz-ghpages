@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+
+    <title>Robotka</title>
+    <meta name="description" content="Robotka pro Robotický tábor" />
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/jquery.fancybox.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen,projection" href="/assets/main.css">
+    <link rel="canonical" href="https://robotka.robotickytabor.cz/search.html" />
+    <link rel="stylesheet" href="/assets/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172441283-1"></script>
+<script>
+  window['ga-disable-UA-172441283-1'] = window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNotTrack === "yes" || navigator.msDoNotTrack === "1";
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-172441283-1');
+</script>
+
+    
+</head>
+
+
+  <body>
+
+    <div class="navbar-fixed">
+<nav class="primary" role="navigation">
+
+    <div class="nav-wrapper container">
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+
+      <a id="logo-container" class="brand-logo" href="/">
+        <img src="/img/logo.png">
+        <span style="border-bottom: 2px solid #ef476f;">Robotka</span>
+      </a>
+
+    
+    
+
+          <ul class="hide-on-med-and-down" style="list-style-type: none; margin-left: 200px">
+            <li><a href="/">Úvod</a></li>
+            <li><a href="/#galerie">Galerie</a></li>
+            
+                
+                    
+                    
+                
+                    
+                    
+                    <li><a href="/guide/">Návod na složení</a></li>
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+            
+
+            
+            <li><a href="/coding/000_vyvojove_prostredi.html">Programování</a></li>
+            
+            <li><a href="/assignments/first/01_01_blikani.html">Úkoly</a></li>
+            
+            <li><a href="/inspiration/000_uvod.html">Inspirace</a></li>
+
+            
+            <li><a href="/recovery/index.html" class="orange-text" style="font-weight: bold">Nefunguje?</a></li>
+
+
+          </ul>
+
+          <ul id="nav-mobile" class="side-nav">
+            <li><a href="/">Úvod</a></li>
+            <li><a href="/#galerie">Galerie</a></li>
+
+              
+                
+                    
+                    
+                
+                    
+                    
+                    <li><a href="/guide/">Návod na složení</a></li>
+                      
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+            
+
+            
+            <li><a href="/coding/000_vyvojove_prostredi.html">Programování</a></li>
+            
+            <li><a href="/assignments/first/01_01_blikani.html">Úkoly</a></li>
+            
+            <li><a href="/inspiration/000_uvod.html">Inspirace</a></li>
+
+            
+            <li><a href="/recovery/index.html" class="orange-text" style="font-weight: bold">Nefunguje?</a></li>
+          </ul>
+
+
+
+          
+
+          <form action="/search" class="search-form">
+            <input type="text" placeholder="Hledat..." name="q">
+            <button type="submit" class="btn-flat white-text"><i class="material-icons">search</i></button>
+          </form>
+
+
+
+    </div>
+</nav>
+</div>
+
+
+    <main>
+        <div class="container">
+  <div class="section no-pad-bot" id="index-banner">
+    <br><br>
+
+  <div class="section" id="about">
+      <div class="col s10 offset-s1">
+        <div class="gcse-search"></div>
+
+      </div>
+  </div>
+
+<script async src="https://cse.google.com/cse.js?cx=011138295605611927302:ohquzucqa9c"></script>
+
+    </main>
+
+    
+
+    <!--  Scripts-->
+<script src="/js/jquery.min.js"></script>
+<script src="/js/materialize.min.js"></script>
+<script src="/js/jquery.fancybox.min.js"></script>
+<script>window.noZensmooth = true</script>
+<script src="/js/zenscroll-min.js"></script>
+<script src="/js/init.js"></script>
+
+
+    <script>
+(function (root, factory) {
+    if (typeof define === 'function' && define.amd) {
+      define(function() {
+        return factory(root);
+      });
+    } else if (typeof exports === 'object') {
+      module.exports = factory;
+    } else {
+      root.echo = factory(root);
+    }
+  })(this, function (root) {
+  
+    'use strict';
+  
+    var echo = {};
+  
+    var callback = function () {};
+  
+    var offset, poll, delay, useDebounce, unload;
+  
+    var isHidden = function (element) {
+      return (element.offsetParent === null);
+    };
+    
+    var inView = function (element, view) {
+      if (isHidden(element)) {
+        return false;
+      }
+  
+      var box = element.getBoundingClientRect();
+      return (box.right >= view.l && box.bottom >= view.t && box.left <= view.r && box.top <= view.b);
+    };
+  
+    var debounceOrThrottle = function () {
+      if(!useDebounce && !!poll) {
+        return;
+      }
+      clearTimeout(poll);
+      poll = setTimeout(function(){
+        echo.render();
+        poll = null;
+      }, delay);
+    };
+  
+    echo.init = function (opts) {
+      opts = opts || {};
+      var offsetAll = opts.offset || 0;
+      var offsetVertical = opts.offsetVertical || offsetAll;
+      var offsetHorizontal = opts.offsetHorizontal || offsetAll;
+      var optionToInt = function (opt, fallback) {
+        return parseInt(opt || fallback, 10);
+      };
+      offset = {
+        t: optionToInt(opts.offsetTop, offsetVertical),
+        b: optionToInt(opts.offsetBottom, offsetVertical),
+        l: optionToInt(opts.offsetLeft, offsetHorizontal),
+        r: optionToInt(opts.offsetRight, offsetHorizontal)
+      };
+      delay = optionToInt(opts.throttle, 250);
+      useDebounce = opts.debounce !== false;
+      unload = !!opts.unload;
+      callback = opts.callback || callback;
+      echo.render();
+      if (document.addEventListener) {
+        root.addEventListener('scroll', debounceOrThrottle, false);
+        root.addEventListener('load', debounceOrThrottle, false);
+      } else {
+        root.attachEvent('onscroll', debounceOrThrottle);
+        root.attachEvent('onload', debounceOrThrottle);
+      }
+    };
+  
+    echo.render = function (context) {
+      var nodes = (context || document).querySelectorAll('[data-echo], [data-echo-background]');
+      var length = nodes.length;
+      var src, elem;
+      var view = {
+        l: 0 - offset.l,
+        t: 0 - offset.t,
+        b: (root.innerHeight || document.documentElement.clientHeight) + offset.b,
+        r: (root.innerWidth || document.documentElement.clientWidth) + offset.r
+      };
+      for (var i = 0; i < length; i++) {
+        elem = nodes[i];
+        if (inView(elem, view)) {
+  
+          if (unload) {
+            elem.setAttribute('data-echo-placeholder', elem.src);
+          }
+  
+          if (elem.getAttribute('data-echo-background') !== null) {
+            elem.style.backgroundImage = 'url(' + elem.getAttribute('data-echo-background') + ')';
+          }
+          else if (elem.src !== (src = elem.getAttribute('data-echo'))) {
+            elem.src = src;
+          }
+  
+          if (!unload) {
+            elem.removeAttribute('data-echo');
+            elem.removeAttribute('data-echo-background');
+          }
+  
+          callback(elem, 'load');
+        }
+        else if (unload && !!(src = elem.getAttribute('data-echo-placeholder'))) {
+  
+          if (elem.getAttribute('data-echo-background') !== null) {
+            elem.style.backgroundImage = 'url(' + src + ')';
+          }
+          else {
+            elem.src = src;
+          }
+  
+          elem.removeAttribute('data-echo-placeholder');
+          callback(elem, 'unload');
+        }
+      }
+      if (!length) {
+        echo.detach();
+      }
+    };
+  
+    echo.detach = function () {
+      if (document.removeEventListener) {
+        root.removeEventListener('scroll', debounceOrThrottle);
+      } else {
+        root.detachEvent('onscroll', debounceOrThrottle);
+      }
+      clearTimeout(poll);
+    };
+  
+    return echo;
+  
+  });
+</script>
+<script>
+    echo.init({
+      offset: 2500,
+      throttle: 250,
+      unload: false,
+      callback: function (element, op) {
+        //console.log(element, 'has been', op + 'ed')
+      }
+    });
+</script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172441283-1"></script>
+<script>
+  window['ga-disable-UA-172441283-1'] = window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNotTrack === "yes" || navigator.msDoNotTrack === "1";
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-172441283-1');
+</script>
+
+  </body>
+
+</html>

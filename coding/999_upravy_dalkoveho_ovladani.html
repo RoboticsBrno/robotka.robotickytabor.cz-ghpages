@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+
+    <title>Úpravy dálkového ovládání</title>
+    <meta name="description" content="Úpravy dálkového ovládání" />
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/jquery.fancybox.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen,projection" href="/assets/main.css">
+    <link rel="canonical" href="https://robotka.robotickytabor.cz/coding/999_upravy_dalkoveho_ovladani.html" />
+    <link rel="stylesheet" href="/assets/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172441283-1"></script>
+<script>
+  window['ga-disable-UA-172441283-1'] = window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNotTrack === "yes" || navigator.msDoNotTrack === "1";
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-172441283-1');
+</script>
+
+    
+</head>
+
+
+  <body>
+
+    <div class="navbar-fixed">
+<nav class="primary" role="navigation">
+
+    <div class="nav-wrapper container">
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+
+      <a id="logo-container" class="brand-logo" href="/">
+        <img src="/img/logo.png">
+        <span style="border-bottom: 2px solid #ef476f;">Robotka</span>
+      </a>
+
+    
+    
+
+          <ul class="hide-on-med-and-down" style="list-style-type: none; margin-left: 200px">
+            <li><a href="/">Úvod</a></li>
+            <li><a href="/#galerie">Galerie</a></li>
+            
+                
+                    
+                    
+                
+                    
+                    
+                    <li><a href="/guide/">Návod na složení</a></li>
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+            
+
+            
+            <li><a href="/coding/000_vyvojove_prostredi.html">Programování</a></li>
+            
+            <li><a href="/assignments/first/01_01_blikani.html">Úkoly</a></li>
+            
+            <li><a href="/inspiration/000_uvod.html">Inspirace</a></li>
+
+            
+            <li><a href="/recovery/index.html" class="orange-text" style="font-weight: bold">Nefunguje?</a></li>
+
+
+          </ul>
+
+          <ul id="nav-mobile" class="side-nav">
+            <li><a href="/">Úvod</a></li>
+            <li><a href="/#galerie">Galerie</a></li>
+
+              
+                
+                    
+                    
+                
+                    
+                    
+                    <li><a href="/guide/">Návod na složení</a></li>
+                      
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+            
+
+            
+            <li><a href="/coding/000_vyvojove_prostredi.html">Programování</a></li>
+            
+            <li><a href="/assignments/first/01_01_blikani.html">Úkoly</a></li>
+            
+            <li><a href="/inspiration/000_uvod.html">Inspirace</a></li>
+
+            
+            <li><a href="/recovery/index.html" class="orange-text" style="font-weight: bold">Nefunguje?</a></li>
+          </ul>
+
+
+
+          
+
+          <form action="/search" class="search-form">
+            <input type="text" placeholder="Hledat..." name="q">
+            <button type="submit" class="btn-flat white-text"><i class="material-icons">search</i></button>
+          </form>
+
+
+
+    </div>
+</nav>
+</div>
+
+
+    <main>
+        
+<div class="sidenav">
+    
+        <a href="/coding/000_vyvojove_prostredi.html">1. Vývojové prostředí</a>
+        
+    
+        <a href="/coding/001_dalkove_ovladani.html">2. Dálkové ovládání</a>
+        
+    
+        <a href="/coding/002_zalozeni_projektu.html">3. Nový projekt</a>
+        
+    
+        <a href="/coding/003_prvni_program.html">4. První program</a>
+        
+    
+        <a href="/coding/004_formatovani_kodu.html">5. Formátování kódu</a>
+        
+    
+        <a href="/coding/005_komentare.html">6. Komentáře</a>
+        
+    
+        <a href="/coding/006_promenna.html">7. Proměnná</a>
+        
+    
+        <a href="/coding/007_vetveni.html">8. Větvení</a>
+        
+    
+        <a href="/coding/008_cyklus.html">9. Cyklus</a>
+        
+    
+        <a href="/coding/009_funkce.html">10. Funkce</a>
+        
+    
+        <a href="/coding/010_LEDky.html">11. LEDky</a>
+        
+    
+        <a href="/coding/011_LED_pasek.html">12. LED pásek</a>
+        
+    
+        <a href="/coding/012_seriova_linka.html">13. Sériová linka</a>
+        
+    
+        <a href="/coding/013_koncova_tlacitka.html">14. Koncová tlačítka</a>
+        
+    
+        <a href="/coding/014_prace_s_tlacitky.html">15. Práce s tlačítky</a>
+        
+    
+        <a href="/coding/015_ultrazvuk.html">16. Ultrazvuk</a>
+        
+    
+        <a href="/coding/016_IR_senzor.html">17. IR senzor</a>
+        
+    
+        <a href="/coding/017_motory.html">18. Motory</a>
+        
+    
+        <a href="/coding/018_monitorovani.html">19. Monitorování robotky</a>
+        
+    
+        <a href="/coding/019_servos.html">20. Serva (hloupá)</a>
+        
+    
+        <a href="/coding/999_upravy_dalkoveho_ovladani.html">21. Úpravy dálkového ovládání</a>
+        
+            
+                <a href="#layout" style="margin-left: 18px; font-size: 80%"> Layout</a>
+            
+                <a href="#reakce-na-události" style="margin-left: 18px; font-size: 80%"> Reakce na události</a>
+            
+                <a href="#zobrazování-dat-z-robotky" style="margin-left: 18px; font-size: 80%"> Zobrazování dat z Robotky</a>
+            
+                <a href="#dokumentace" style="margin-left: 18px; font-size: 80%"> Dokumentace</a>
+            
+        
+    
+
+
+    <a style="margin: 32px 12px 0px 12px; padding: 0 2rem;" class="btn-small" href="https://roboticsbrno.github.io/RB3204-RBCX-Robotka-library/modules.html">Dokumentace</a>
+    <a style="margin: 8px 12px 24px 12px; padding: 0 2rem;" class="btn-small green darken-1" href="https://github.com/RoboticsBrno/robotka-examples/archive/master.zip">Příklady</a>
+
+</div>
+
+
+<div class="bgwrap">
+    <div class="main">
+        <div class="container con-guide coding-container coding-container-narrow">
+            <h1 id="úpravy-dálkového-ovládání">Úpravy dálkového ovládání</h1>
+
+<p class="lead">Jak upravit to, co vidíte na telefonu nebo počítači v aplikaci RBController?</p>
+
+<p class="important">Tato kapitola předpokládá, že upravuješ <code class="language-plaintext highlighter-rouge">rbcontroller-android-app</code> z našeho balíku
+příkladů pro Robotku, viz <a href="/coding/001_dalkove_ovladani.html">Dálkové ovládání</a>.</p>
+
+<p>Ovládání na telefonu pouze zobrazuje to, co mu pošle tvoje Robotka.
+V <a href="/coding/001_dalkove_ovladani.html">příkladu dálkového ovládání</a>
+je to pouze jeden joystick, ale to můžeš rychle změnit.
+K ovládacímu rozhraní totiž existuje “návrhář”:</p>
+
+<div class="center-align mv-l" style="font-size: 36px">
+<p><a href="https://bit.ly/rb_designer" target="_blank">bit.ly/rb_designer</a></p>
+</div>
+
+<p>Otevři si ho v prohlížeči.</p>
+
+<h4 id="layout">Layout</h4>
+<p><em>Layout</em> je popis celého ovládacího rozhraní - kde všechny prvky (<em>widgety</em>) jsou,
+jak se jmenují a jaké mají parametry. <em>Layout</em> je výstupem z návrháře a v projektu
+už jeden máš jako soubor <code class="language-plaintext highlighter-rouge">src/layout.h</code>. Najdi si ho ve VSCode, otevři, a
+<strong>zkopíruj celý jeho obsah do schránky</strong> (ctrl+c).</p>
+
+<p>Poté přejdi <a href="https://bit.ly/rb_designer" target="_blank">do návrháře</a> a
+klikni na žluté tlačítko <em>Import layout</em> vlevo nahoře. Do dialogu vlož (ctrl+v) obsah souboru
+<code class="language-plaintext highlighter-rouge">src/layout.h</code>, který máš ve schránce.</p>
+
+<p>Výsledek by měl vypadat takto:</p>
+
+<div class="ph-xl mh-a mb-xl" style="max-width: 800px">
+<div class="row">
+    <div class="col l12 s12">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="/img/guides/rbgridui01.png">
+                <img src="/img/empty.gif" data-echo="/thumb/img/guides/rbgridui01.png" alt="" class="responsive-img crisp" />
+            </a>
+            
+        </figure>
+    </div>
+</div>
+
+</div>
+
+<p>Zkus do layoutu přetáhnout z levého sloupce jeden <em>Button</em> (tlačítko), prozatím mu
+nic dalšího nenastavuj.</p>
+
+<p>Upravený <strong>layout dostaneš do programu zpátky tak</strong>, že klikneš na <em>Copy to Clipboard</em>
+vpravo nahoře v boxu <em>Generated C++</em>, předeš zpátky do VSCode do souboru <code class="language-plaintext highlighter-rouge">src/layout.h</code>,
+a celý jeho obsah nahradíš tím, co máš ve schránce (ctrl+a ctrl+v).</p>
+
+<p>Poté nahraj program do Robotky, připoj se přes RBController aplikaci a tam obnov stránku.
+Přidané nové tlačítko by mělo být vidět, zatím ale nic nedělá.</p>
+
+<h4 id="reakce-na-události">Reakce na události</h4>
+<p>Některé widgety (např. <em>Button</em>, <em>Checkbox</em>, <em>Joystick</em>…) vytvářejí určité události:
+<em>tlačítko stisknuto</em>, <em>checkbox odšrtnut/zaškrtnut</em> nebo <em>joystick se pohl</em>.</p>
+
+<p>Na tyto události můžeš v kódu reagovat, viz joystick v příkladu <code class="language-plaintext highlighter-rouge">rbcontroller-android-app</code>:</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class="rouge-code"><pre>    <span class="k">auto</span> <span class="n">builder</span> <span class="o">=</span> <span class="n">Layout</span><span class="p">.</span><span class="n">begin</span><span class="p">();</span>
+
+    <span class="n">builder</span><span class="p">.</span><span class="n">Joystick1</span>
+        <span class="p">.</span><span class="n">onPositionChanged</span><span class="p">([</span><span class="o">&amp;</span><span class="p">](</span><span class="n">Joystick</span> <span class="o">&amp;</span><span class="n">joy</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">rkMotorsJoystick</span><span class="p">(</span><span class="n">joy</span><span class="p">.</span><span class="n">x</span><span class="p">(),</span> <span class="n">joy</span><span class="p">.</span><span class="n">y</span><span class="p">());</span>
+        <span class="p">});</span>
+
+    <span class="n">builder</span><span class="p">.</span><span class="n">commit</span><span class="p">();</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Zde si všimni prvního a posledního řádku - ty musí být v každém programu používající RBController
+a dálkové ovládání. <strong>Mezi nimy je prostor pro zpracovávání událostí.</strong> Pojďmě si rozebrat, co se v kódu děje:</p>
+
+<ul>
+  <li>
+    <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="n">builder</span><span class="p">.</span><span class="n">Joystick1</span><span class="p">.</span><span class="n">onPositionChanged</span><span class="p">(...</span>
+</pre></td></tr></tbody></table></code></pre></div>    </div>
+
+    <p>Tato konstrukce říká, že chceme pracovat s prvkem, který má ID <code class="language-plaintext highlighter-rouge">Joystick1</code>,
+a že chceme zpracovat událost <code class="language-plaintext highlighter-rouge">PositionChanged</code>. ID se nastavuje v návrháři,
+zkuste vybrat některý z widgetů a ID bude žlutě zvýrazněné napravo ve sloupci <em>Properties</em>.</p>
+  </li>
+  <li>
+    <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre><span class="p">[</span><span class="o">&amp;</span><span class="p">](</span><span class="n">Joystick</span> <span class="o">&amp;</span><span class="n">joy</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">rkMotorsJoystick</span><span class="p">(</span><span class="n">joy</span><span class="p">.</span><span class="n">x</span><span class="p">(),</span> <span class="n">joy</span><span class="p">.</span><span class="n">y</span><span class="p">());</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div>    </div>
+
+    <p>Události využívají tzv. <em>lambda funkce</em> - malinkaté funkce, které vytvoříte syntaxí <code class="language-plaintext highlighter-rouge">[&amp;](&lt;parametry&gt;){ &lt;kód&gt; }</code>.
+V případě návrháře budou parametry vždy <code class="language-plaintext highlighter-rouge">(&lt;Typ widgetu&gt; &amp;widget)</code> - v tomto případě je typ <code class="language-plaintext highlighter-rouge">Joystick</code>.
+Kód, který je pak v těle funkce, se vykoná vždy, když daná událost nastane.<br />
+Zde nastavujeme výkon motorů podle toho, v jaké poloze je <code class="language-plaintext highlighter-rouge">Joystick1</code>.</p>
+  </li>
+</ul>
+
+<p><strong>Příklad: reagování na stisknutí tlačítka</strong></p>
+
+<p>Do layoutu jsme přidali jedno tlačítko. Přejdi zase do návrháře, vyberte ho, a v pravém sloupci
+<em>Properties</em> změňte ID na něco jiného, například <code class="language-plaintext highlighter-rouge">prepniLed</code>. Layout opět nakopíruj do svého projektu
+ve VSCode.</p>
+
+<p>Přejdi do <code class="language-plaintext highlighter-rouge">src/main.cpp</code> a přidej do zpracování událostí tvé tlačítko. Všimni si, že
+VSCode ti po napsání <code class="language-plaintext highlighter-rouge">builder.</code> začne napovídat ID widgetů, které jsou v tvém layoutu.
+Stejně tak začne po napsání <code class="language-plaintext highlighter-rouge">builder.prepniLed.</code> napovídat, co všechno lze s tlačítkem dělat.</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+</pre></td><td class="rouge-code"><pre>    <span class="k">auto</span> <span class="n">builder</span> <span class="o">=</span> <span class="n">Layout</span><span class="p">.</span><span class="n">begin</span><span class="p">();</span>
+
+    <span class="n">builder</span><span class="p">.</span><span class="n">Joystick1</span>
+        <span class="p">.</span><span class="n">onPositionChanged</span><span class="p">([</span><span class="o">&amp;</span><span class="p">](</span><span class="n">Joystick</span> <span class="o">&amp;</span><span class="n">joy</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">rkMotorsJoystick</span><span class="p">(</span><span class="n">joy</span><span class="p">.</span><span class="n">x</span><span class="p">(),</span> <span class="n">joy</span><span class="p">.</span><span class="n">y</span><span class="p">());</span>
+        <span class="p">});</span>
+    
+    <span class="n">builder</span><span class="p">.</span><span class="n">prepniLed</span>
+        <span class="p">.</span><span class="n">onPress</span><span class="p">([</span><span class="o">&amp;</span><span class="p">](</span><span class="n">Button</span><span class="o">&amp;</span> <span class="n">b</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">rkLedGreen</span><span class="p">(</span><span class="nb">true</span><span class="p">);</span>
+        <span class="p">})</span>
+        <span class="p">.</span><span class="n">onRelease</span><span class="p">([</span><span class="o">&amp;</span><span class="p">](</span><span class="n">Button</span><span class="o">&amp;</span> <span class="n">b</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">rkLedGreen</span><span class="p">(</span><span class="nb">false</span><span class="p">);</span>
+        <span class="p">});</span>
+
+    <span class="n">builder</span><span class="p">.</span><span class="n">commit</span><span class="p">();</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Nahrej program do Robotky a vyzkoušej, jestli funguje. Výsledkem by mělo být,
+že zelená LED svítí, dokud držíš tlačítko v aplikaci stisknuté.</p>
+
+<h4 id="zobrazování-dat-z-robotky">Zobrazování dat z Robotky</h4>
+
+<p>Komunikace může probíhat i druhým směrem, můžeš tak zobrazovat informace z Robotky
+na tvém telefonu. Zkusíme to nejprve s napětím baterie.</p>
+
+<p>V návrháři <strong>přidej do layoutu jeden <em>Text</em> widget</strong> a nastav mu ID, například
+<code class="language-plaintext highlighter-rouge">napetiMv</code>. Layout opět zkopíruj do svého projektu.</p>
+
+<p>Kód bude vypadat takto (reagování na události vynecháno):</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class="rouge-code"><pre>    <span class="k">auto</span> <span class="n">builder</span> <span class="o">=</span> <span class="n">Layout</span><span class="p">.</span><span class="n">begin</span><span class="p">();</span>
+    <span class="p">...</span>
+    <span class="n">builder</span><span class="p">.</span><span class="n">commit</span><span class="p">();</span>
+
+    <span class="k">while</span><span class="p">(</span><span class="nb">true</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">Layout</span><span class="p">.</span><span class="n">napetiMv</span><span class="p">.</span><span class="n">setText</span><span class="p">(</span><span class="n">fmt</span><span class="o">::</span><span class="n">format</span><span class="p">(</span><span class="s">"{} mV"</span><span class="p">,</span> <span class="n">rkBatteryVoltageMv</span><span class="p">()));</span>
+        <span class="n">delay</span><span class="p">(</span><span class="mi">500</span><span class="p">);</span>
+    <span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Přidali jsme nekonečnou smyčku, která každých 500 ms (půl vteřiny) <strong>nastaví obsah <em>Textu</em> s ID <code class="language-plaintext highlighter-rouge">napetiMv</code>.</strong></p>
+
+<ul>
+  <li>Posílání dat do telefonu přijde, narozdíl od zpracování událostí, až <strong>pod řádek <code class="language-plaintext highlighter-rouge">builder.commit();</code></strong>.</li>
+  <li>Lze nastavovat spoustu jiných parametrů, zkus napsat <code class="language-plaintext highlighter-rouge">Layout.napetiMv.</code> a bude ti napovězeno, co všechno můžeš použít.</li>
+  <li>Funkce <code class="language-plaintext highlighter-rouge">fmt::format</code> převede výsledek funkce <code class="language-plaintext highlighter-rouge">rkBatteryVoltageMv()</code>, což je <code class="language-plaintext highlighter-rouge">int</code>, na textový řetězec (<code class="language-plaintext highlighter-rouge">std::string</code>)
+a přidá za něj jednotku mV (millivolty).</li>
+  <li><code class="language-plaintext highlighter-rouge">fmt:format</code> má jako první parametr “šablonu”, v našem případě <code class="language-plaintext highlighter-rouge">"{} mV"</code>. Všechny <code class="language-plaintext highlighter-rouge">{}</code> v šabloně jsou nahrazeny hodnotou
+dalších parametrů, v našem případě je <code class="language-plaintext highlighter-rouge">{}</code> nahrazeno výsledkem <code class="language-plaintext highlighter-rouge">rkBatteryVoltageMv()</code>. V šabloně může být vice než jeden <code class="language-plaintext highlighter-rouge">{}</code>.</li>
+</ul>
+
+<p>Data lze zobrazovat i ze zpracování událostí. Následující kód také funguje, protože <em>lambda funkce</em> událostí jsou volány
+až po té, co proběhne <code class="language-plaintext highlighter-rouge">builder.commit();</code>.</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class="rouge-code"><pre>    <span class="k">auto</span> <span class="n">builder</span> <span class="o">=</span> <span class="n">Layout</span><span class="p">.</span><span class="n">begin</span><span class="p">();</span>
+
+    <span class="n">builder</span><span class="p">.</span><span class="n">Joystick1</span>
+        <span class="p">.</span><span class="n">onPositionChanged</span><span class="p">([</span><span class="o">&amp;</span><span class="p">](</span><span class="n">Joystick</span> <span class="o">&amp;</span><span class="n">joy</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">Layout</span><span class="p">.</span><span class="n">textJoystick</span><span class="p">.</span><span class="n">setText</span><span class="p">(</span><span class="n">fmt</span><span class="o">::</span><span class="n">format</span><span class="p">(</span><span class="s">"{}x{}"</span><span class="p">,</span> <span class="n">joy</span><span class="p">.</span><span class="n">x</span><span class="p">(),</span> <span class="n">joy</span><span class="p">.</span><span class="n">y</span><span class="p">()));</span>
+        <span class="p">});</span>
+
+    <span class="n">builder</span><span class="p">.</span><span class="n">commit</span><span class="p">();</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h4 id="dokumentace">Dokumentace</h4>
+
+<ul>
+  <li><a href="https://roboticsbrno.github.io/Esp32-RBGridUI/group__event.html">Seznam všech možných událostí</a></li>
+  <li><a href="https://roboticsbrno.github.io/Esp32-RBGridUI/group__widgets__constructed.html">Seznam widgetů</a> - po kliknutí
+na určitý typ je vidět, co všechno na něm jde nastavovat.</li>
+</ul>
+
+
+            <div class="coding-container-narrow mv-xxl">
+                <h1> </h1>
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+    </main>
+
+    
+
+    <!--  Scripts-->
+<script src="/js/jquery.min.js"></script>
+<script src="/js/materialize.min.js"></script>
+<script src="/js/jquery.fancybox.min.js"></script>
+<script>window.noZensmooth = true</script>
+<script src="/js/zenscroll-min.js"></script>
+<script src="/js/init.js"></script>
+
+
+    <script>
+(function (root, factory) {
+    if (typeof define === 'function' && define.amd) {
+      define(function() {
+        return factory(root);
+      });
+    } else if (typeof exports === 'object') {
+      module.exports = factory;
+    } else {
+      root.echo = factory(root);
+    }
+  })(this, function (root) {
+  
+    'use strict';
+  
+    var echo = {};
+  
+    var callback = function () {};
+  
+    var offset, poll, delay, useDebounce, unload;
+  
+    var isHidden = function (element) {
+      return (element.offsetParent === null);
+    };
+    
+    var inView = function (element, view) {
+      if (isHidden(element)) {
+        return false;
+      }
+  
+      var box = element.getBoundingClientRect();
+      return (box.right >= view.l && box.bottom >= view.t && box.left <= view.r && box.top <= view.b);
+    };
+  
+    var debounceOrThrottle = function () {
+      if(!useDebounce && !!poll) {
+        return;
+      }
+      clearTimeout(poll);
+      poll = setTimeout(function(){
+        echo.render();
+        poll = null;
+      }, delay);
+    };
+  
+    echo.init = function (opts) {
+      opts = opts || {};
+      var offsetAll = opts.offset || 0;
+      var offsetVertical = opts.offsetVertical || offsetAll;
+      var offsetHorizontal = opts.offsetHorizontal || offsetAll;
+      var optionToInt = function (opt, fallback) {
+        return parseInt(opt || fallback, 10);
+      };
+      offset = {
+        t: optionToInt(opts.offsetTop, offsetVertical),
+        b: optionToInt(opts.offsetBottom, offsetVertical),
+        l: optionToInt(opts.offsetLeft, offsetHorizontal),
+        r: optionToInt(opts.offsetRight, offsetHorizontal)
+      };
+      delay = optionToInt(opts.throttle, 250);
+      useDebounce = opts.debounce !== false;
+      unload = !!opts.unload;
+      callback = opts.callback || callback;
+      echo.render();
+      if (document.addEventListener) {
+        root.addEventListener('scroll', debounceOrThrottle, false);
+        root.addEventListener('load', debounceOrThrottle, false);
+      } else {
+        root.attachEvent('onscroll', debounceOrThrottle);
+        root.attachEvent('onload', debounceOrThrottle);
+      }
+    };
+  
+    echo.render = function (context) {
+      var nodes = (context || document).querySelectorAll('[data-echo], [data-echo-background]');
+      var length = nodes.length;
+      var src, elem;
+      var view = {
+        l: 0 - offset.l,
+        t: 0 - offset.t,
+        b: (root.innerHeight || document.documentElement.clientHeight) + offset.b,
+        r: (root.innerWidth || document.documentElement.clientWidth) + offset.r
+      };
+      for (var i = 0; i < length; i++) {
+        elem = nodes[i];
+        if (inView(elem, view)) {
+  
+          if (unload) {
+            elem.setAttribute('data-echo-placeholder', elem.src);
+          }
+  
+          if (elem.getAttribute('data-echo-background') !== null) {
+            elem.style.backgroundImage = 'url(' + elem.getAttribute('data-echo-background') + ')';
+          }
+          else if (elem.src !== (src = elem.getAttribute('data-echo'))) {
+            elem.src = src;
+          }
+  
+          if (!unload) {
+            elem.removeAttribute('data-echo');
+            elem.removeAttribute('data-echo-background');
+          }
+  
+          callback(elem, 'load');
+        }
+        else if (unload && !!(src = elem.getAttribute('data-echo-placeholder'))) {
+  
+          if (elem.getAttribute('data-echo-background') !== null) {
+            elem.style.backgroundImage = 'url(' + src + ')';
+          }
+          else {
+            elem.src = src;
+          }
+  
+          elem.removeAttribute('data-echo-placeholder');
+          callback(elem, 'unload');
+        }
+      }
+      if (!length) {
+        echo.detach();
+      }
+    };
+  
+    echo.detach = function () {
+      if (document.removeEventListener) {
+        root.removeEventListener('scroll', debounceOrThrottle);
+      } else {
+        root.detachEvent('onscroll', debounceOrThrottle);
+      }
+      clearTimeout(poll);
+    };
+  
+    return echo;
+  
+  });
+</script>
+<script>
+    echo.init({
+      offset: 2500,
+      throttle: 250,
+      unload: false,
+      callback: function (element, op) {
+        //console.log(element, 'has been', op + 'ed')
+      }
+    });
+</script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172441283-1"></script>
+<script>
+  window['ga-disable-UA-172441283-1'] = window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNotTrack === "yes" || navigator.msDoNotTrack === "1";
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-172441283-1');
+</script>
+
+  </body>
+
+</html>
